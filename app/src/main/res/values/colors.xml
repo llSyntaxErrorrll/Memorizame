@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <!-- colores basicos -->
+    <color name="Blanco">#FFFFFF</color>
+    <color name="Blanco2">#FAFAFA</color>
+    <color name="Blanco3">#F1F1F1</color>
+    <color name="Negro">#000000</color>
+
+    <!-- colores de material desing en el espectro de 600-->
+    <color name="Rojo">#e53935</color>
+    <color name="RojoOscuro">#ab000d</color>
+
+    <color name="Rosado">#d81b60</color>
+    <color name="RosadoOscuro">#a00037</color>
+
+    <color name="Morado">#8e24aa</color>
+    <color name="MoradoOscuro">#5c007a</color>
+
+    <color name="MoradoProfundo">#5e35b1</color>
+    <color name="MoradoProfundoOscuro">#280680</color>
+
+    <color name="Indigo">#3949ab</color>
+    <color name="IndigoOscuro">#00227b</color>
+
+    <color name="Azul">#1e88e5</color>
+    <color name="AzulOscuro">#005cb2</color>
+
+    <color name="AzulClaro">#039be5</color>
+    <color name="AzulClaroOscuro">#006db3</color>
+
+    <color name="Cyan">#00acc1</color>
+    <color name="CyanOscuro">#007c91</color>
+
+    <color name="Teal">#00897b</color>
+    <color name="TealOscuro">#005b4f</color>
+
+    <color name="Verde">#43a047</color>
+    <color name="VerdeOscuro">#00701a</color>
+
+    <color name="VerdeClaro">#7cb342</color>
+    <color name="VerdeClaroOscuro">#4b830d</color>
+
+    <color name="Lima">#c0ca33</color>
+    <color name="LimaOscuro">#8c9900</color>
+
+    <color name="Amarillo">#fdd835</color>
+    <color name="AmarilloOscuro">#c6a700</color>
+
+    <color name="Ambar">#ffb300</color>
+    <color name="AmbarOscuro">#c68400</color>
+
+    <color name="Naranja">#fb8c00</color>
+    <color name="NaranjaOscuro">#c25e00</color>
+
+    <color name="NaranjaProfundo">#f4511e</color>
+    <color name="NaranjaProfundoOscuro">#b91400</color>
+
+    <color name="Cafe">#6d4c41</color>
+    <color name="CafeOscuro">#40241a</color>
+
+    <color name="Gris">#757575</color>
+    <color name="GrisOscuro">#494949</color>
+
+    <color name="GrisAzulado">#546e7a</color>
+    <color name="GrisAzuladoOscuro">#29434e</color>
+
 </resources>

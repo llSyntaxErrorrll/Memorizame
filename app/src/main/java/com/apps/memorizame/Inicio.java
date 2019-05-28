@@ -3,15 +3,10 @@ package com.apps.memorizame;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
-import com.apps.memorizame.Adapters.InicioAdapter;
-import com.apps.memorizame.Entitys.InicioEntity;
-import java.util.ArrayList;
 
 public class Inicio extends AppCompatActivity {
 

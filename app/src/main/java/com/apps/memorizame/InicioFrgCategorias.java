@@ -7,10 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.apps.memorizame.Adapters.InicioAdapter;
 import com.apps.memorizame.Entitys.InicioEntity;
-
 import java.util.ArrayList;
 
 public class InicioFrgCategorias extends Fragment {

@@ -12,14 +12,14 @@
         android:layout_height="@dimen/dim_dosc">
 
         <ImageView
-            android:id="@+id/inicio_cv_categorias_imagen"
+            android:id="@+id/inicio_categorias_cv_imagen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
             android:adjustViewBounds="true"/>
 
         <TextView
-            android:id="@+id/inicio_cv_categorias_nombre"
+            android:id="@+id/inicio_categorias_cv_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/dim_10"
@@ -31,7 +31,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/inicio_cv_categorias_bloqueo"
+            android:id="@+id/inicio_categorias_cv_bloqueo"
             android:layout_width="@dimen/dim_95"
             android:layout_height="@dimen/dim_95"
             android:padding="@dimen/dim_20"

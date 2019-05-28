@@ -1,7 +1,5 @@
 package com.apps.memorizame.Entitys;
 
-import android.graphics.drawable.Drawable;
-
 public class InicioEntity {
 
     //declaracion de variables

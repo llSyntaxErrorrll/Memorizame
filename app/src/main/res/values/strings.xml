@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Memorizame</string>
     <string name="title_activity_inicio">Inicio</string>
+
+    <string name="instru">Instrucciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

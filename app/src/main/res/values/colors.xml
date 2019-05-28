@@ -5,6 +5,7 @@
     <color name="Blanco2">#FAFAFA</color>
     <color name="Blanco3">#F1F1F1</color>
     <color name="Negro">#000000</color>
+    <color name="Transparent">#80000000</color>
 
     <!-- colores de material desing en el espectro de 600-->
     <color name="Rojo">#e53935</color>

@@ -20,6 +20,8 @@
     <dimen name="dim_90">90dp</dimen>
     <dimen name="dim_95">95dp</dimen>
     <dimen name="dim_cien">100dp</dimen>
+    <dimen name="dim_cien_50">150dp</dimen>
+    <dimen name="dim_dosc">200dp</dimen>
 
     <!-- dimensiones para los textos -->
     <dimen name="txt_dim_5">5sp</dimen>

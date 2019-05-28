@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dim_5"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_dosc">
+
+        <ImageView
+            android:id="@+id/inicio_cv_categorias_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/inicio_cv_categorias_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim_10"
+            android:layout_alignParentBottom="true"
+
+            android:background="@color/Transparent"
+            android:textColor="@color/Blanco"
+            android:textAlignment="textEnd"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/inicio_cv_categorias_bloqueo"
+            android:layout_width="@dimen/dim_95"
+            android:layout_height="@dimen/dim_95"
+            android:padding="@dimen/dim_20"
+            android:background="@drawable/shape_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_vector_lock"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_memorizame"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Intrucciones"></activity>
         <activity
             android:name=".Inicio"
             android:label="@string/title_activity_inicio"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

@@ -17,7 +17,7 @@
             android:layout_centerHorizontal="true"
             android:layout_width="@dimen/dim_cien"
             android:layout_height="@dimen/dim_cien"
-            android:src="@drawable/intelligence"/>
+            android:src="@drawable/ic_memorizame"/>
 
         <TextView
             android:layout_below="@+id/main_img"

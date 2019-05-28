@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".Main">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
 
-
-
-    <com.ortiz.touchview.TouchImageView
-        android:src="@drawable/ic_launcher_foreground"
+    <RelativeLayout
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/dim_cien"
+            android:layout_height="@dimen/dim_cien"
+            android:src="@drawable/intelligence"/>
+
+        <TextView
+            android:layout_below="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/AzulClaro"
+
+            app:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt_dim_45"
+            android:typeface="normal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

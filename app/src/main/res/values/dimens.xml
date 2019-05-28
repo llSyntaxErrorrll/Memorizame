@@ -42,5 +42,6 @@
     <dimen name="txt_dim_90">90sp</dimen>
     <dimen name="txt_dim_95">95sp</dimen>
     <dimen name="txt_dim_cien">100sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

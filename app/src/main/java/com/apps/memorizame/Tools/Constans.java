@@ -34,6 +34,7 @@ public class Constans {
 
     //Columnas de la tabla respuestas
     public static final String dbColumRespues_id = "id_respuesta";
+    public static final int dbColumRespues_id_index = 0;
     public static final String dbColumRespues_nombre = "respuestas";
     public static final String dbColumRespues_pre = "ide_pregunta";
     public static final String dbColumRespues_respuestaCorerec = "respuesta_correcta";

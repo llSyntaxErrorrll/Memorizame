@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import com.apps.memorizame.SQLite.CategoriasCRUD;
+
 public class Main extends AppCompatActivity {
 
     @Override
@@ -26,8 +28,28 @@ public class Main extends AppCompatActivity {
         @Override
         protected Object doInBackground(Object[] objects) {
             try{
-                //1.5s y pasar de actividad
-                Thread.sleep(1500);
+                /*CategoriasCRUD categorias = new CategoriasCRUD(getApplicationContext());
+                Boolean categoriasValidator = categorias.isFristTime();
+
+                Boolean vefifiFinal = false;
+
+                if(categoriasValidator){
+                    vefifiFinal = true;
+                }
+
+                Intent pasar = null;
+
+                if (vefifiFinal){
+                    //instrucciones 1ra ves
+                    //pasar = new Intent(Main.this, Instrucciones.class);
+                }else{
+                    //pasar al inicio
+                    pasar = new Intent(Main.this, Inicio.class);
+                }*/
+
+
+
+
                 Intent pasar = new Intent(Main.this, Inicio.class);
                 startActivity(pasar);
                 finish();

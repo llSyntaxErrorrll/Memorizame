@@ -7,8 +7,11 @@ import android.database.sqlite.SQLiteDatabase;
 import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.Tools.Constans;
 
+import java.util.ArrayList;
+
 public class CategoriasCRUD {
 
+    //declracion de variables de db
     Database database;
     SQLiteDatabase db;
 
@@ -26,11 +29,47 @@ public class CategoriasCRUD {
         values.put(Constans.dbColumCatego_imag, entity.getIdEstado());
 
         //inserta en db
-        return db.insert(Constans.dbTbCatego, Constans.dbColumCatego_id, values);
+        long rs = db.insert(Constans.dbTbCatego, Constans.dbColumCatego_id, values);
+        db.close();
+        return rs;
     }
 
     public Cursor read(){
         db = database.getReadableDatabase();
-        return db.rawQuery("SELECT * FROM "+Constans.dbTbCatego,null);
+        Cursor rs = db.rawQuery("SELECT * FROM "+Constans.dbTbCatego,null);
+        db.close();
+        return rs;
+    }
+
+    public boolean isFristTime(){
+        try{
+            //consulta en db
+            db = database.getReadableDatabase();
+            Cursor rows = db.rawQuery("SELECT count('"+ Constans.dbColumCatego_id+"') FROM "+Constans.dbTbCatego,null);
+
+            //conteno de los registros
+            rows.moveToFirst();
+            boolean rs = (rows.getInt(0) <= 0);
+
+            if(rs){
+                db = database.getWritableDatabase();
+                //entidades quemadas
+                CategoriasEntity casas = new CategoriasEntity("Casas","",1);
+                CategoriasEntity animal = new CategoriasEntity("Animales","",0);
+                CategoriasEntity calles = new CategoriasEntity("Calles","",0);
+
+                //insertar cada entidad
+                insert(casas);
+                insert(animal);
+                insert(calles);
+            }
+
+            //finaliza
+            db.close();
+            return rs;
+
+        }catch (Exception e){
+            return true;
+        }
     }
 }

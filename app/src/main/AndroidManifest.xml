@@ -11,7 +11,6 @@
         android:roundIcon="@mipmap/ic_memorizame"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Intrucciones"></activity>
         <activity
             android:name=".Inicio"
             android:label="@string/title_activity_inicio"
@@ -21,7 +20,6 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

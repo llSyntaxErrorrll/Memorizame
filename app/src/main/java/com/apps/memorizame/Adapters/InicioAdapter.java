@@ -38,6 +38,13 @@ public class InicioAdapter extends RecyclerView.Adapter<InicioHolder> {
         //setear datos de cada elemento del card
         holder.imagen.setBackgroundResource(data.getImagen());
         holder.nombre.setText(data.getNombre());
+
+        //ocultar candado o no
+        if(data.getEstado().equals("Completo")){
+            holder.bloqueo.setVisibility(View.GONE);
+        }else{
+            holder.bloqueo.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

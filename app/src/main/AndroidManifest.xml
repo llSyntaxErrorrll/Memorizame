@@ -16,12 +16,20 @@
             android:label="@string/title_activity_inicio"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Main"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:name=".MemorizaImagen"
+            android:label="@string/memorizaimagen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Preguntas"
+            android:label="@string/preguntas" />
+        <activity
+            android:name=".Main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
         </activity>
     </application>
 

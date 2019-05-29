@@ -30,7 +30,7 @@ public class MemorizaImagen extends AppCompatActivity {
 
         referenciar();
         Picasso.with(this)
-                .load(R.drawable.ic_memorizame)
+                .load(R.drawable.cat_casas)
                 .into(imagen);
         iniciarTemporizador();
     }

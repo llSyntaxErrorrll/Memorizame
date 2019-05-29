@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.apps.memorizame.Adapters.InicioAdapter;
-import com.apps.memorizame.Entitys.InicioEntity;
+import com.apps.memorizame.Entitys.CategoriasEntity;
 import java.util.ArrayList;
 
 public class InicioFrgCategorias extends Fragment {
@@ -35,12 +35,12 @@ public class InicioFrgCategorias extends Fragment {
 
     private void iniciarRecycler(){
         //entidades quemadas
-        InicioEntity casas = new InicioEntity(R.drawable.cat_casas,"Casas","");
-        InicioEntity animal = new InicioEntity(R.drawable.cat_animales,"Animales","");
-        InicioEntity calles = new InicioEntity(R.drawable.cat_calle,"Calles","");
+        CategoriasEntity casas = new CategoriasEntity("Casas","",1);
+        CategoriasEntity animal = new CategoriasEntity("Animales","",0);
+        CategoriasEntity calles = new CategoriasEntity("Calles","",0);
 
         //lista de entidades
-        ArrayList<InicioEntity> entities = new ArrayList<>();
+        ArrayList<CategoriasEntity> entities = new ArrayList<>();
         entities.add(casas);
         entities.add(animal);
         entities.add(calles);

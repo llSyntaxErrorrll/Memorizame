@@ -6,15 +6,18 @@ public class Constans {
     public static final String dbName = "memorizameDB";
     public static final String dbTbCatego = "categorias";
     public static final String dbTbSubCatego = "sub_categorias";
-    public static final String dbTbEstado = "estados";
     public static final String dbTbPregun = "preguntas";
     public static final String dbTbRespue = "respuestas";
 
     //columnas de la tabla de categorias
     public static final String dbColumCatego_id = "id_categorias";
+    public static final int dbColumCatego_id_index = 0;
     public static final String dbColumCatego_name = "nombre_categoria";
+    public static final int dbColumCatego_name_index = 1;
     public static final String dbColumCatego_imag = "imagen_categoria";
+    public static final int dbColumCatego_imag_index = 2;
     public static final String dbColumCatego_esta = "id_estado";
+    public static final int dbColumCatego_esta_index = 3;
 
     //columnas de la tabla de categorias
     public static final String dbColumSubCatego_id = "id_sub_categorias";

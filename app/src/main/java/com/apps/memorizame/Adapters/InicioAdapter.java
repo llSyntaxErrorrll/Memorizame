@@ -6,17 +6,17 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.apps.memorizame.Entitys.InicioEntity;
+import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.R;
 import java.util.ArrayList;
 
 public class InicioAdapter extends RecyclerView.Adapter<InicioHolder> {
 
     //declaracion de variables
-    private ArrayList<InicioEntity> entities = new ArrayList<>();
+    private ArrayList<CategoriasEntity> entities = new ArrayList<>();
     private Context context;
 
-    public InicioAdapter(ArrayList<InicioEntity> entities, Context context){
+    public InicioAdapter(ArrayList<CategoriasEntity> entities, Context context){
         //setear datos desde el constructor
         this.entities = entities;
         this.context = context;
@@ -33,14 +33,14 @@ public class InicioAdapter extends RecyclerView.Adapter<InicioHolder> {
     @Override
     public void onBindViewHolder(@NonNull InicioHolder holder, int i) {
         //dato exacto
-        InicioEntity data = entities.get(i);
+        CategoriasEntity data = entities.get(i);
 
         //setear datos de cada elemento del card
-        holder.imagen.setBackgroundResource(data.getImagen());
+        holder.imagen.setBackgroundResource(Integer.valueOf(data.getImagen()));
         holder.nombre.setText(data.getNombre());
 
-        //ocultar candado o no
-        if(data.getEstado().equals("Completo")){
+        //1 = completado, 0 = incompletado
+        if(data.getIdEstado() == 1){
             holder.bloqueo.setVisibility(View.GONE);
         }else{
             holder.bloqueo.setVisibility(View.VISIBLE);

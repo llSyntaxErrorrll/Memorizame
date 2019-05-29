@@ -9,6 +9,7 @@ import com.apps.memorizame.R;
 
 public class InicioHolder extends RecyclerView.ViewHolder {
 
+    //elementos que estan en el layout
     ImageView imagen,bloqueo;
     TextView nombre;
 

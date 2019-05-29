@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemorizaImagen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ortiz.touchview.TouchImageView
+            android:id="@+id/imgTouchUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBarCircle"
+            android:layout_marginBottom="37dp"
+            android:src="@drawable/ic_memorizame" />
+        <ProgressBar
+            android:id="@+id/progressBarCircle"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/circulo_2"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circulo_1"
+            android:rotation="-90" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="39dp"
+            android:text="00:01:00"
+            android:textColor="@color/GrisAzuladoOscuro"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/btnTerminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dim_20"
+            android:layout_marginRight="@dimen/dim_20"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

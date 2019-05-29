@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="trans">#33000000 </color>
     <!-- colores basicos -->
     <color name="Blanco">#FFFFFF</color>
     <color name="Blanco2">#FAFAFA</color>

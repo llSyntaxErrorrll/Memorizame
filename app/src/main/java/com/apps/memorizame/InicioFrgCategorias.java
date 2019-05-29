@@ -35,9 +35,9 @@ public class InicioFrgCategorias extends Fragment {
 
     private void iniciarRecycler(){
         //entidades quemadas
-        InicioEntity casas = new InicioEntity(R.drawable.cat_casas,"Casas","Completo");
-        InicioEntity animal = new InicioEntity(R.drawable.cat_animales,"Animales","InCompleto");
-        InicioEntity calles = new InicioEntity(R.drawable.cat_calle,"Calles","InCompleto");
+        InicioEntity casas = new InicioEntity(R.drawable.cat_casas,"Casas","");
+        InicioEntity animal = new InicioEntity(R.drawable.cat_animales,"Animales","");
+        InicioEntity calles = new InicioEntity(R.drawable.cat_calle,"Calles","");
 
         //lista de entidades
         ArrayList<InicioEntity> entities = new ArrayList<>();

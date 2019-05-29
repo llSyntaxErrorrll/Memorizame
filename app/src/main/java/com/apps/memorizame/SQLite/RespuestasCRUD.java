@@ -20,7 +20,7 @@ public class RespuestasCRUD {
         ContentValues values = new ContentValues();
         values.put(Constans.dbColumRespues_nombre, respuestasEntity.getRespuesta());
         values.put(Constans.dbColumRespues_pre, respuestasEntity.getIdPregunta());
-        values.put(Constans.dbColumRespues_respuestaCorerec, respuestasEntity.getRespuestaCorreta());
+        values.put(Constans.dbColumRespues_respuestaCorret, respuestasEntity.getRespuestaCorreta());
 
         return db.insert(Constans.dbTbPregun, Constans.dbColumPregunt_id, values);
     }

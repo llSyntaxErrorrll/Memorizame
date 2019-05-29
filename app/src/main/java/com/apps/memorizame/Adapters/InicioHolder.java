@@ -15,6 +15,7 @@ public class InicioHolder extends RecyclerView.ViewHolder {
 
     public InicioHolder(@NonNull View itemView) {
         super(itemView);
+
         //encontrar cada elemento
         imagen = itemView.findViewById(R.id.inicio_categorias_cv_imagen);
         nombre = itemView.findViewById(R.id.inicio_categorias_cv_nombre);

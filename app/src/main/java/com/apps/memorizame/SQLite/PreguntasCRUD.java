@@ -11,10 +11,10 @@ import com.apps.memorizame.Tools.Constans;
 
 public class PreguntasCRUD {
 
-    Database database;
-    SQLiteDatabase db;
+    private Database database;
+    private SQLiteDatabase db;
 
-    public PreguntasCRUD(Context context){database= new Database(context);}
+    public PreguntasCRUD(Context context){ database= new Database(context); }
 
     public long insertPreguntas (PreguntasEntity preguntasEntity){
         db = database.getWritableDatabase();

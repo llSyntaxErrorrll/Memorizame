@@ -14,7 +14,7 @@ public class CategoriasEntity {
     }
 
     //metodos geters
-    public String getImagen(){ return imagen; }
     public String getNombre(){ return nombre; }
+    public String getImagen(){ return imagen; }
     public int getIdEstado(){ return idEstado; }
 }

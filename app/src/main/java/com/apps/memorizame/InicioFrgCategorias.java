@@ -1,5 +1,6 @@
 package com.apps.memorizame;
 
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.apps.memorizame.Adapters.InicioAdapter;
 import com.apps.memorizame.Entitys.CategoriasEntity;
+import com.apps.memorizame.SQLite.CategoriasCRUD;
+import com.apps.memorizame.Tools.Constans;
+
 import java.util.ArrayList;
 
 public class InicioFrgCategorias extends Fragment {
@@ -34,16 +38,23 @@ public class InicioFrgCategorias extends Fragment {
     }
 
     private void iniciarRecycler(){
-        //entidades quemadas
-        CategoriasEntity casas = new CategoriasEntity("Casas","",1);
-        CategoriasEntity animal = new CategoriasEntity("Animales","",0);
-        CategoriasEntity calles = new CategoriasEntity("Calles","",0);
-
         //lista de entidades
         ArrayList<CategoriasEntity> entities = new ArrayList<>();
-        entities.add(casas);
-        entities.add(animal);
-        entities.add(calles);
+
+        //lectura de los datos de db
+        CategoriasCRUD crud = new CategoriasCRUD(getContext());
+        Cursor rs = crud.read();
+
+        //recorrer datos
+        while (rs.moveToNext()){
+            //entidad temporal
+            CategoriasEntity entity = new CategoriasEntity(
+                    rs.getString(Constans.dbColumCatego_name_index),
+                    rs.getString(Constans.dbColumCatego_imag_index),
+                    rs.getInt(Constans.dbColumCatego_esta_index)
+            );
+            entities.add(entity);
+        }
 
         //adaptador
         InicioAdapter adapter = new InicioAdapter(entities, getContext());

@@ -28,9 +28,9 @@ public class Main extends AppCompatActivity {
         @Override
         protected Object doInBackground(Object[] objects) {
             try{
-                /*CategoriasCRUD categorias = new CategoriasCRUD(getApplicationContext());
+                CategoriasCRUD categorias = new CategoriasCRUD(getApplicationContext());
                 Boolean categoriasValidator = categorias.isFristTime();
-
+                /*
                 Boolean vefifiFinal = false;
 
                 if(categoriasValidator){
@@ -49,7 +49,7 @@ public class Main extends AppCompatActivity {
 
 
 
-
+                Thread.sleep(1500);
                 Intent pasar = new Intent(Main.this, Inicio.class);
                 startActivity(pasar);
                 finish();

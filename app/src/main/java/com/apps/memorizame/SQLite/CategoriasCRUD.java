@@ -12,8 +12,8 @@ import java.util.ArrayList;
 public class CategoriasCRUD {
 
     //declracion de variables de db
-    Database database;
-    SQLiteDatabase db;
+    private Database database;
+    private SQLiteDatabase db;
 
     public CategoriasCRUD(Context context){
         database = new Database(context);
@@ -26,7 +26,7 @@ public class CategoriasCRUD {
         ContentValues values = new ContentValues();
         values.put(Constans.dbColumCatego_name, entity.getNombre());
         values.put(Constans.dbColumCatego_imag, entity.getImagen());
-        values.put(Constans.dbColumCatego_imag, entity.getIdEstado());
+        values.put(Constans.dbColumCatego_esta, entity.getIdEstado());
 
         //inserta en db
         long rs = db.insert(Constans.dbTbCatego, Constans.dbColumCatego_id, values);
@@ -37,7 +37,6 @@ public class CategoriasCRUD {
     public Cursor read(){
         db = database.getReadableDatabase();
         Cursor rs = db.rawQuery("SELECT * FROM "+Constans.dbTbCatego,null);
-        db.close();
         return rs;
     }
 
@@ -54,9 +53,9 @@ public class CategoriasCRUD {
             if(rs){
                 db = database.getWritableDatabase();
                 //entidades quemadas
-                CategoriasEntity casas = new CategoriasEntity("Casas","",1);
-                CategoriasEntity animal = new CategoriasEntity("Animales","",0);
-                CategoriasEntity calles = new CategoriasEntity("Calles","",0);
+                CategoriasEntity casas = new CategoriasEntity("Casas", "cat_casas",1);
+                CategoriasEntity animal = new CategoriasEntity("Animales","cat_animales",0);
+                CategoriasEntity calles = new CategoriasEntity("Calles","cat_calle",0);
 
                 //insertar cada entidad
                 insert(casas);

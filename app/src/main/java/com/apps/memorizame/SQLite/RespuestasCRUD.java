@@ -9,10 +9,10 @@ import com.apps.memorizame.Tools.Constans;
 
 public class RespuestasCRUD {
 
-    Database database;
-    SQLiteDatabase db;
+    private Database database;
+    private SQLiteDatabase db;
 
-    public RespuestasCRUD(Context context){database= new Database(context);}
+    public RespuestasCRUD(Context context){ database= new Database(context); }
 
     public long insertPreguntas (RespuestasEntity respuestasEntity){
         db = database.getWritableDatabase();

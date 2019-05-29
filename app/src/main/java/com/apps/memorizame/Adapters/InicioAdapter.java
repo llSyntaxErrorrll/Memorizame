@@ -1,6 +1,7 @@
 package com.apps.memorizame.Adapters;
 
 import android.content.Context;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -35,16 +36,15 @@ public class InicioAdapter extends RecyclerView.Adapter<InicioHolder> {
         //dato exacto
         CategoriasEntity data = entities.get(i);
 
-        //setear datos de cada elemento del card
-        holder.imagen.setBackgroundResource(Integer.valueOf(data.getImagen()));
+        //obtener imagen por el nombre
+        @DrawableRes
+        int res = context.getResources().getIdentifier(data.getImagen(), "drawable", context.getPackageName());
+        holder.imagen.setBackgroundResource(res);
+
         holder.nombre.setText(data.getNombre());
 
-        //1 = completado, 0 = incompletado
-        if(data.getIdEstado() == 1){
-            holder.bloqueo.setVisibility(View.GONE);
-        }else{
-            holder.bloqueo.setVisibility(View.VISIBLE);
-        }
+        //si es igual a 1 que es completo, oculta el candado
+        holder.bloqueo.setVisibility( (data.getIdEstado() == 1) ? View.GONE : View.VISIBLE);
     }
 
     @Override

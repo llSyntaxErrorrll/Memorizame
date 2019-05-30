@@ -51,7 +51,7 @@ public class Database extends SQLiteOpenHelper {
                 Constans.dbColumRespues_id+" INTEGER PRIMARY KEY AUTOINCREMENT,"+
                 Constans.dbColumRespues_nombre+" TEXT,"+
                 Constans.dbColumRespues_pre+" INTEGER,"+
-                Constans.dbColumRespues_respuestaCorerec+" TEXT)";
+                Constans.dbColumRespues_respuestaCorret+" TEXT)";
 
         //ejecutar creacion de db
         db.execSQL(sql);

@@ -9,7 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apps.memorizame.Entitys.CategoriasEntity;
+import com.apps.memorizame.Entitys.PreguntasEntity;
 import com.apps.memorizame.SQLite.CategoriasCRUD;
+import com.apps.memorizame.SQLite.PreguntasCRUD;
 import com.apps.memorizame.Tools.Constans;
 
 public class Preguntas extends AppCompatActivity {
@@ -23,18 +25,10 @@ public class Preguntas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preguntas);
 
+        PreguntasEntity preguntasEntity = new PreguntasEntity("", 1);
+        PreguntasCRUD preguntasCRUD = new PreguntasCRUD(getApplicationContext());
 
-        CategoriasCRUD categoriasCRUD = new CategoriasCRUD(getApplicationContext());
-        CategoriasEntity entity1 = new CategoriasEntity("CATEGORIAX","-700090",1);
-        CategoriasEntity entity2 = new CategoriasEntity("CATEGORIAXXX","-700090",0);
-
-        long result1 = categoriasCRUD.insert(entity1);
-        long result2 = categoriasCRUD.insert(entity2);
-
-        Toast.makeText(this, "ID GUARDADO: "+result1+", "+result2, Toast.LENGTH_SHORT).show();
-
-
-        Cursor resultx = categoriasCRUD.read();
+        Cursor resultx = preguntasCRUD.readPreguntas(preguntasEntity);
         while (resultx.moveToNext()){
             Toast.makeText(this, resultx.getString(Constans.dbColumCatego_name_index), Toast.LENGTH_SHORT).show();
         }

@@ -6,12 +6,15 @@ public class RespuestasEntity {
     private int idRespuesta,idPregunta;
     private String respuesta,respuestaCorrecta;
 
-    public RespuestasEntity(int idRespuesta, String respuesta, int idPregunta, String respuestaCorrecta){
+    public RespuestasEntity( String respuesta, int idPregunta, String respuestaCorrecta){
         //setear datos
-        this.idRespuesta = idRespuesta;
         this.respuesta = respuesta;
         this.idPregunta = idPregunta;
         this.respuestaCorrecta = respuestaCorrecta;
+    }
+
+    public void setIdPregunta(int idRespuesta){
+        this.idRespuesta = idRespuesta;
     }
 
     //metodos geters

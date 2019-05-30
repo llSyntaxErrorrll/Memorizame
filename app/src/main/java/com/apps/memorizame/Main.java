@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.WindowManager;
 
 import com.apps.memorizame.SQLite.CategoriasCRUD;
+import com.apps.memorizame.SQLite.PreguntasCRUD;
 
 public class Main extends AppCompatActivity {
 
@@ -29,7 +30,10 @@ public class Main extends AppCompatActivity {
         protected Object doInBackground(Object[] objects) {
             try{
                 CategoriasCRUD categorias = new CategoriasCRUD(getApplicationContext());
+                PreguntasCRUD preguntas = new PreguntasCRUD(getApplicationContext());
+
                 Boolean categoriasValidator = categorias.isFristTime();
+                Boolean preguntasValidator = preguntas.isFristTime();
                 /*
                 Boolean vefifiFinal = false;
 
@@ -50,7 +54,7 @@ public class Main extends AppCompatActivity {
 
 
                 Thread.sleep(1500);
-                Intent pasar = new Intent(Main.this, Inicio.class);
+                Intent pasar = new Intent(Main.this, Preguntas.class);
                 startActivity(pasar);
                 finish();
             }catch (Exception e){

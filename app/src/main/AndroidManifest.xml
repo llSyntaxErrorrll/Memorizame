@@ -20,7 +20,7 @@
             android:label="@string/memorizaimagen"/>
         <activity
             android:name=".Preguntas"
-            android:label="@string/preguntas" />
+            android:label="@string/preguntas"/>
         <activity
             android:name=".Main"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">

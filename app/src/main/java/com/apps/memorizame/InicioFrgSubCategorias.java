@@ -1,25 +1,38 @@
 package com.apps.memorizame;
 
+import android.content.Context;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
+import com.apps.memorizame.Adapters.subCategoriasAdapter;
+import com.apps.memorizame.Entitys.CategoriasEntity;
+import com.apps.memorizame.Entitys.SubCategoriasEntity;
+import com.apps.memorizame.SQLite.CategoriasCRUD;
+import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
+import com.apps.memorizame.Tools.TheInterface;
+
+import java.util.ArrayList;
 
 public class InicioFrgSubCategorias extends Fragment {
 
     //deracaracion de variables
+    private RecyclerView recycler;
     private View view;
-    private int mParam1=0;
+    private int idCategorias=0;
+    private TheInterface communicatorx;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getInt(Constans.dbColumCatego_id);
+            idCategorias = getArguments().getInt(Constans.dbColumCatego_id);
         }
     }
 
@@ -28,10 +41,60 @@ public class InicioFrgSubCategorias extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.inicio_frg_sub_categorias, container, false);
 
-        //inicio de los metodos
-        Toast.makeText(getContext(), "idCategoria: "+mParam1, Toast.LENGTH_SHORT).show();
+        //inicar metodos
+        asignarIDs();
+        iniciarRecycler();
 
         return view;
+    }
+
+    private void iniciarRecycler(){
+        //lista de entidades
+        ArrayList<SubCategoriasEntity> entities = new ArrayList<>();
+
+        SubCategoriasEntity args = new SubCategoriasEntity(null,null,idCategorias,0,null);
+
+        //lectura de los datos de db
+        SubCategoriasCRUD crud = new SubCategoriasCRUD(getContext());
+        Cursor rs = crud.read(args);
+
+        //recorrer datos
+        while (rs.moveToNext()){
+            //entidad temporal
+            SubCategoriasEntity entity = new SubCategoriasEntity(
+                    rs.getString(Constans.dbColumSubCatego_name_index),
+                    rs.getString(Constans.dbColumSubCatego_imag_index),
+                    rs.getInt(Constans.dbColumSubCatego_cate_index),
+                    rs.getInt(Constans.dbColumSubCatego_esta_index),
+                    rs.getString(Constans.dbColumSubCatego_cali_index)
+            );
+            entity.setIdSubCategoria(rs.getInt(Constans.dbColumSubCatego_id_index));
+            entities.add(entity);
+        }
+
+        //adaptador con onclick
+        subCategoriasAdapter adapter = new subCategoriasAdapter(entities, getContext());
+        adapter.setClickItem(new subCategoriasAdapter.OnItemCLickListener() {
+            @Override
+            public void OnClickItem(int position) {
+                communicatorx.comunicador(position);
+            }
+        });
+
+        //propiedades del recycler y adaptador
+        recycler.setAdapter(adapter);
+        recycler.setLayoutManager(new GridLayoutManager(getContext(),2));
+        recycler.setHasFixedSize(true);
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        communicatorx = (TheInterface) context;
+    }
+
+    private void asignarIDs(){
+        recycler = view.findViewById(R.id.inicio_frg_sub_categorias_rv);
     }
 
 }

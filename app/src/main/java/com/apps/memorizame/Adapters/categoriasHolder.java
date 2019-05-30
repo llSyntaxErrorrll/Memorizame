@@ -13,7 +13,7 @@ public class categoriasHolder extends RecyclerView.ViewHolder {
     protected ImageView imagen,bloqueo;
     protected TextView nombre;
 
-    public categoriasHolder(@NonNull View itemView, final categoriasAdapter.OnItemCLickListener clickItem) {
+    public categoriasHolder(@NonNull View itemView) {
         super(itemView);
 
         //encontrar cada elemento

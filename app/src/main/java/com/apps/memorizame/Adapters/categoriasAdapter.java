@@ -30,7 +30,7 @@ public class categoriasAdapter extends RecyclerView.Adapter<categoriasHolder> {
     public categoriasHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         //inflar las vistas del cardview
         View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.inicio_frg_categorias_cv,viewGroup, false);
-        return new categoriasHolder(itemView, clickItem);
+        return new categoriasHolder(itemView);
     }
 
     @Override
@@ -66,10 +66,10 @@ public class categoriasAdapter extends RecyclerView.Adapter<categoriasHolder> {
         }
     }
 
+    //sirve para enviar los datos al fragmento
     public interface OnItemCLickListener{
         void OnClickItem(int position);
     }
-
     public void setClickItem(OnItemCLickListener clickItem){ this.clickItem = clickItem; }
 
     @Override

@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".InicioFrgSubCategorias">
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/inicio_frg_sub_categorias_rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

@@ -15,6 +15,8 @@ import com.apps.memorizame.SQLite.CategoriasCRUD;
 import com.apps.memorizame.SQLite.PreguntasCRUD;
 import com.apps.memorizame.Tools.Constans;
 
+import java.util.ArrayList;
+
 public class Preguntas extends AppCompatActivity {
 
     RadioGroup radioGroup1, radioGroup2, radioGroup3, radioGroup4, radioGroup5, radioGroup6;
@@ -27,24 +29,35 @@ public class Preguntas extends AppCompatActivity {
         PreguntasEntity preguntasEntity = new PreguntasEntity("", 1);
         PreguntasCRUD preguntasCRUD = new PreguntasCRUD(getApplicationContext());
 
-        String[] preguntasArray = {};
+        String[] preguntasArray = new String[6];
+        ArrayList<PreguntasEntity> entityArrayList = new ArrayList<>();
 
         Cursor resultx = preguntasCRUD.readPreguntas(preguntasEntity);
         int i = 0;
         while (resultx.moveToNext()){
-            i++;
+
+            PreguntasEntity entity1 = new PreguntasEntity(
+                    resultx.getString(Constans.dbColumPregunt_nombre_index),
+                    resultx.getInt(Constans.dbColumPregunt_subcate_index)
+            );
+
+            entityArrayList.add(entity1);
             preguntasArray[i] = resultx.getString(Constans.dbColumCatego_name_index);
             //Toast.makeText(this, resultx.getString(Constans.dbColumCatego_name_index), Toast.LENGTH_SHORT).show();
+            i++;
         }
 
         referenciar();
 
-        txtPregunta1.setText(preguntasArray[0]);
-        txtPregunta1.setText(preguntasArray[1]);
-        txtPregunta1.setText(preguntasArray[2]);
-        txtPregunta1.setText(preguntasArray[3]);
-        txtPregunta1.setText(preguntasArray[4]);
-        txtPregunta1.setText(preguntasArray[5]);
+
+        txtPregunta1.setText(entityArrayList.get(0).getNombrePregunta());
+        //obtener de db segun el id
+        entityArrayList.get(0).getIdPregunta();
+        txtPregunta2.setText(preguntasArray[1]);
+        txtPregunta3.setText(preguntasArray[2]);
+        txtPregunta4.setText(preguntasArray[3]);
+        txtPregunta5.setText(preguntasArray[4]);
+        txtPregunta6.setText(preguntasArray[5]);
 
         /*Bundle parametros = this.getIntent().getExtras();
         if(parametros != null){

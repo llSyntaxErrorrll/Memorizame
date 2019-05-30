@@ -36,7 +36,7 @@ public class SubCategoriasCRUD {
         return rs;
     }
 
-    public Cursor read(CategoriasEntity entity){
+    public Cursor read(SubCategoriasEntity entity){
         db = database.getReadableDatabase();
         String args[] = { String.valueOf(entity.getIdCategoria()) };
         return db.rawQuery("SELECT * FROM "+Constans.dbTbSubCatego+" WHERE "+Constans.dbColumSubCatego_cate+" = ? ",args);

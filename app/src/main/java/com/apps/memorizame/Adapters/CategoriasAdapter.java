@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.R;
+import com.apps.memorizame.Tools.Constans;
+
 import java.util.ArrayList;
 
 public class CategoriasAdapter extends RecyclerView.Adapter<CategoriasHolder> {
@@ -41,7 +43,7 @@ public class CategoriasAdapter extends RecyclerView.Adapter<CategoriasHolder> {
         //obtener imagen por el nombre
         @DrawableRes
         int res = context.getResources().getIdentifier(data.getImagen(), "drawable", context.getPackageName());
-        holder.imagen.setBackgroundResource(res);
+        holder.imagen.setImageResource(res);
 
         holder.nombre.setText(data.getNombre());
 
@@ -56,6 +58,8 @@ public class CategoriasAdapter extends RecyclerView.Adapter<CategoriasHolder> {
                 }
             });
         }else{
+            //mostrar bloquedo, borrosear img.
+            holder.imagen.setBlur(Constans.blurRadius);
             holder.bloqueo.setVisibility(View.VISIBLE);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

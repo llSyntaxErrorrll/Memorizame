@@ -13,7 +13,6 @@ import com.apps.memorizame.Adapters.CategoriasAdapter;
 import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.SQLite.CategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
-import com.apps.memorizame.Tools.TheInterface;
 import java.util.ArrayList;
 
 public class InicioFrgCategorias extends Fragment {
@@ -21,7 +20,7 @@ public class InicioFrgCategorias extends Fragment {
     //deracaracion de variables
     private View view;
     private RecyclerView recycler;
-    private TheInterface communicatorx;
+    private ClickCategorias clickCategorias;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,11 +60,11 @@ public class InicioFrgCategorias extends Fragment {
         }
 
         //adaptador con onclick
-        CategoriasAdapter adapter = new CategoriasAdapter(entities, getContext());
+        final CategoriasAdapter adapter = new CategoriasAdapter(entities, getContext());
         adapter.setClickItem(new CategoriasAdapter.OnItemCLickListener() {
             @Override
             public void OnClickItem(int position) {
-                communicatorx.comunicador(position);
+                clickCategorias.ClickCategorias(position);
             }
         });
 
@@ -78,11 +77,15 @@ public class InicioFrgCategorias extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        communicatorx = (TheInterface) context;
+        clickCategorias = (ClickCategorias) context;
     }
 
     private void asignarIDs(){
         //metodo para encontrar ids de cada elemento
         recycler = view.findViewById(R.id.inicio_frg_categorias_rv);
+    }
+
+    public interface ClickCategorias{
+        void ClickCategorias(int position);
     }
 }

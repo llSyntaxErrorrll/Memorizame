@@ -13,8 +13,6 @@ import com.apps.memorizame.Adapters.SubCategoriasAdapter;
 import com.apps.memorizame.Entitys.SubCategoriasEntity;
 import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
-import com.apps.memorizame.Tools.TheInterfaceTwo;
-
 import java.util.ArrayList;
 
 public class InicioFrgSubCategorias extends Fragment {
@@ -23,7 +21,7 @@ public class InicioFrgSubCategorias extends Fragment {
     private RecyclerView recycler;
     private View view;
     private int idCategorias=0;
-    private TheInterfaceTwo communicatorxTwo;
+    private ClickSubCategorias clickSubCategorias;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,7 +72,7 @@ public class InicioFrgSubCategorias extends Fragment {
         adapter.setClickItem(new SubCategoriasAdapter.OnItemCLickListener() {
             @Override
             public void OnClickItem(int position) {
-                communicatorxTwo.comunicadorxTwo(position);
+                clickSubCategorias.ClickSubCategorias(position);
             }
         });
 
@@ -87,7 +85,11 @@ public class InicioFrgSubCategorias extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        communicatorxTwo = (TheInterfaceTwo) context;
+        clickSubCategorias = (ClickSubCategorias) context;
+    }
+
+    public interface ClickSubCategorias{
+        void ClickSubCategorias(int position);
     }
 
     private void asignarIDs(){

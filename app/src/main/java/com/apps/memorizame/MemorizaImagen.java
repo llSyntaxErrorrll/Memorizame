@@ -10,14 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.apps.memorizame.Entitys.SubCategoriasEntity;
 import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
 import com.ortiz.touchview.TouchImageView;
-import com.squareup.picasso.Picasso;
-
 import java.util.concurrent.TimeUnit;
 
 public class MemorizaImagen extends AppCompatActivity {
@@ -52,7 +48,7 @@ public class MemorizaImagen extends AppCompatActivity {
         //establecer imagen
         @DrawableRes
         int res = getResources().getIdentifier(rs.getString(Constans.dbColumSubCatego_imag_index), "drawable", getPackageName());
-        Picasso.with(this).load(res).into(imagen);
+        imagen.setImageResource(res);
 
         iniciarTemporizador();
     }

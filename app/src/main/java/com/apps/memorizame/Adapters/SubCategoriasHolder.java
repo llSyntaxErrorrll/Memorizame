@@ -7,11 +7,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.apps.memorizame.R;
+import com.jgabrielfreitas.core.BlurImageView;
 
 public class SubCategoriasHolder extends RecyclerView.ViewHolder {
 
     //elementos del laoyur
-    protected ImageView imagen,bloqueo;
+    protected ImageView bloqueo;
+    protected BlurImageView imagen;
     protected TextView nombre,califi;
 
     public SubCategoriasHolder(@NonNull View itemView) {

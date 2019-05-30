@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MemorizaImagen">
 
-    <RelativeLayout
+    <com.ortiz.touchview.TouchImageView
+        android:layout_above="@id/elementos"
+        android:id="@+id/imgTouchUno"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true" />
 
-        <com.ortiz.touchview.TouchImageView
-            android:id="@+id/imgTouchUno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/progressBarCircle"/>
+    <RelativeLayout
+        android:id="@+id/elementos"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_90">
+
         <ProgressBar
             android:id="@+id/progressBarCircle"
             style="?android:attr/progressBarStyleHorizontal"
@@ -26,7 +31,8 @@
             android:max="100"
             android:progress="100"
             android:progressDrawable="@drawable/circulo_1"
-            android:rotation="-90" />
+            android:rotation="-90" >
+        </ProgressBar>
 
         <TextView
             android:id="@+id/textViewTime"
@@ -34,21 +40,23 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerVertical="true"
-            android:layout_marginHorizontal="25dp"
+            android:layout_marginEnd="@dimen/dim_25"
+            android:layout_marginStart="@dimen/dim_25"
             android:layout_marginBottom="39dp"
-            android:text="00:01:00"
+            android:text="@string/tiempo"
             android:textColor="@color/GrisAzuladoOscuro"
-            android:textSize="10sp" />
+            android:textSize="@dimen/txt_dim_10" />
 
         <Button
             android:id="@+id/btnTerminar"
-            android:layout_width="wrap_content"
+            android:background="@color/Azul"
+            android:textColor="@color/Blanco"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/dim_20"
+            android:layout_marginEnd="@dimen/dim_15"
+            android:layout_centerInParent="true"
             android:layout_toEndOf="@+id/progressBarCircle"
-            android:text="Terminar" />
+            android:text="@string/terminar" />
     </RelativeLayout>
 
 </RelativeLayout>

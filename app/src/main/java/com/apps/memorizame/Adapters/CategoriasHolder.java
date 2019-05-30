@@ -6,11 +6,13 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.apps.memorizame.R;
+import com.jgabrielfreitas.core.BlurImageView;
 
 public class CategoriasHolder extends RecyclerView.ViewHolder {
 
     //elementos que estan en el layout
-    protected ImageView imagen,bloqueo;
+    protected ImageView bloqueo;
+    protected BlurImageView imagen;
     protected TextView nombre;
 
     public CategoriasHolder(@NonNull View itemView) {

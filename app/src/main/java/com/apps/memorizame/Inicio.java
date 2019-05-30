@@ -8,12 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.apps.memorizame.Tools.Constans;
-import com.apps.memorizame.Tools.TheInterface;
-import com.apps.memorizame.Tools.TheInterfaceTwo;
 
-public class Inicio extends AppCompatActivity implements TheInterface, TheInterfaceTwo {
+public class Inicio extends AppCompatActivity implements InicioFrgCategorias.ClickCategorias, InicioFrgSubCategorias.ClickSubCategorias {
 
     //declaracion de variables
     private FragmentManager manager;
@@ -27,15 +24,17 @@ public class Inicio extends AppCompatActivity implements TheInterface, TheInterf
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //iniciar fragmentos
-        iniciarFragmentos();
+        //evitar que se recargue esta actividad si se cambia a landscape
+        if(savedInstanceState == null){
+            iniciarFragmentos();
+        }
     }
 
     private void iniciarFragmentos(){
         //crear isntancia de frg y cargar
         InicioFrgCategorias categorias = new InicioFrgCategorias();
         //iniciar frg
-        getSupportFragmentManager().beginTransaction().add(R.id.inicio_content_frg, categorias).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.inicio_content_frg, categorias).commit();
     }
 
     @Override
@@ -58,7 +57,7 @@ public class Inicio extends AppCompatActivity implements TheInterface, TheInterf
     }
 
     @Override
-    public void comunicador(int idCategorias) {
+    public void ClickCategorias(int idCategorias) {
         //argumentos a enviar
         Bundle bundle = new Bundle();
         bundle.putInt(Constans.dbColumCatego_id, idCategorias);
@@ -75,7 +74,7 @@ public class Inicio extends AppCompatActivity implements TheInterface, TheInterf
     }
 
     @Override
-    public void comunicadorxTwo(int idSubCategorias) {
+    public void ClickSubCategorias(int idSubCategorias) {
         //cargar imagen
         Intent pasar = new Intent(Inicio.this, MemorizaImagen.class);
         pasar.putExtra(Constans.dbColumSubCatego_id, idSubCategorias);

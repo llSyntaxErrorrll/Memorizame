@@ -14,14 +14,12 @@
             android:id="@+id/imgTouchUno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/progressBarCircle"
-            android:layout_marginBottom="37dp"
-            android:src="@drawable/ic_memorizame" />
+            android:layout_above="@+id/progressBarCircle"/>
         <ProgressBar
             android:id="@+id/progressBarCircle"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="@dimen/dim_90"
+            android:layout_height="@dimen/dim_90"
             android:layout_alignParentBottom="true"
             android:background="@drawable/circulo_2"
             android:indeterminate="false"
@@ -46,12 +44,11 @@
             android:id="@+id/btnTerminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Terminar"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
             android:layout_marginBottom="@dimen/dim_20"
-            android:layout_marginRight="@dimen/dim_20"
-            />
+            android:layout_toEndOf="@+id/progressBarCircle"
+            android:text="Terminar" />
     </RelativeLayout>
 
 </RelativeLayout>

@@ -8,13 +8,13 @@ import android.widget.TextView;
 
 import com.apps.memorizame.R;
 
-public class subCategoriasHolder extends RecyclerView.ViewHolder {
+public class SubCategoriasHolder extends RecyclerView.ViewHolder {
 
     //elementos del laoyur
     protected ImageView imagen,bloqueo;
     protected TextView nombre;
 
-    public subCategoriasHolder(@NonNull View itemView) {
+    public SubCategoriasHolder(@NonNull View itemView) {
         super(itemView);
 
         //encontrar id de cada elemneto del layour

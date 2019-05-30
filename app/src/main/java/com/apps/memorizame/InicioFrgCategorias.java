@@ -9,8 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.apps.memorizame.Adapters.categoriasAdapter;
+import com.apps.memorizame.Adapters.CategoriasAdapter;
 import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.SQLite.CategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
@@ -62,8 +61,8 @@ public class InicioFrgCategorias extends Fragment {
         }
 
         //adaptador con onclick
-        categoriasAdapter adapter = new categoriasAdapter(entities, getContext());
-        adapter.setClickItem(new categoriasAdapter.OnItemCLickListener() {
+        CategoriasAdapter adapter = new CategoriasAdapter(entities, getContext());
+        adapter.setClickItem(new CategoriasAdapter.OnItemCLickListener() {
             @Override
             public void OnClickItem(int position) {
                 communicatorx.comunicador(position);

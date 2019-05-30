@@ -1,5 +1,6 @@
 package com.apps.memorizame;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -10,8 +11,9 @@ import android.view.MenuItem;
 
 import com.apps.memorizame.Tools.Constans;
 import com.apps.memorizame.Tools.TheInterface;
+import com.apps.memorizame.Tools.TheInterfaceTwo;
 
-public class Inicio extends AppCompatActivity implements TheInterface {
+public class Inicio extends AppCompatActivity implements TheInterface, TheInterfaceTwo {
 
     //declaracion de variables
     private FragmentManager manager;
@@ -33,10 +35,7 @@ public class Inicio extends AppCompatActivity implements TheInterface {
         //crear isntancia de frg y cargar
         InicioFrgCategorias categorias = new InicioFrgCategorias();
         //iniciar frg
-        FragmentTransaction ts = getSupportFragmentManager().beginTransaction();
-        ts.add(R.id.inicio_content_frg, categorias);
-        ts.addToBackStack("Categorias");
-        ts.commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.inicio_content_frg, categorias).commit();
     }
 
     @Override
@@ -73,5 +72,13 @@ public class Inicio extends AppCompatActivity implements TheInterface {
         ts.replace(R.id.inicio_content_frg, frgSubCategorias);
         ts.addToBackStack("SubCategorias");
         ts.commit();
+    }
+
+    @Override
+    public void comunicadorxTwo(int idSubCategorias) {
+        //cargar imagen
+        Intent pasar = new Intent(Inicio.this, MemorizaImagen.class);
+        pasar.putExtra(Constans.dbColumSubCatego_id, idSubCategorias);
+        startActivity(pasar);
     }
 }

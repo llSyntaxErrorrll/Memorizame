@@ -9,14 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.apps.memorizame.Adapters.subCategoriasAdapter;
-import com.apps.memorizame.Entitys.CategoriasEntity;
+import com.apps.memorizame.Adapters.SubCategoriasAdapter;
 import com.apps.memorizame.Entitys.SubCategoriasEntity;
-import com.apps.memorizame.SQLite.CategoriasCRUD;
 import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
-import com.apps.memorizame.Tools.TheInterface;
+import com.apps.memorizame.Tools.TheInterfaceTwo;
 
 import java.util.ArrayList;
 
@@ -26,7 +23,7 @@ public class InicioFrgSubCategorias extends Fragment {
     private RecyclerView recycler;
     private View view;
     private int idCategorias=0;
-    private TheInterface communicatorx;
+    private TheInterfaceTwo communicatorxTwo;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -73,11 +70,11 @@ public class InicioFrgSubCategorias extends Fragment {
         }
 
         //adaptador con onclick
-        subCategoriasAdapter adapter = new subCategoriasAdapter(entities, getContext());
-        adapter.setClickItem(new subCategoriasAdapter.OnItemCLickListener() {
+        SubCategoriasAdapter adapter = new SubCategoriasAdapter(entities, getContext());
+        adapter.setClickItem(new SubCategoriasAdapter.OnItemCLickListener() {
             @Override
             public void OnClickItem(int position) {
-                communicatorx.comunicador(position);
+                communicatorxTwo.comunicadorxTwo(position);
             }
         });
 
@@ -90,7 +87,7 @@ public class InicioFrgSubCategorias extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        communicatorx = (TheInterface) context;
+        communicatorxTwo = (TheInterfaceTwo) context;
     }
 
     private void asignarIDs(){

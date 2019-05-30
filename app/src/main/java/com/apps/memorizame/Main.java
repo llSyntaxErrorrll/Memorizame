@@ -58,7 +58,7 @@ public class Main extends AppCompatActivity {
 
 
                 Thread.sleep(1500);
-                Intent pasar = new Intent(Main.this, Preguntas.class);
+                Intent pasar = new Intent(Main.this, Inicio.class);
                 startActivity(pasar);
                 finish();
             }catch (Exception e){

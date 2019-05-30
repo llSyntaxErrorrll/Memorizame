@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.apps.memorizame.Entitys.CategoriasEntity;
 import com.apps.memorizame.Entitys.PreguntasEntity;
 import com.apps.memorizame.Tools.Constans;
 

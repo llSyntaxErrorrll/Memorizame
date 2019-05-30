@@ -80,7 +80,7 @@ public class Preguntas extends AppCompatActivity {
                     resultx3.getInt(Constans.dbColumRespues_pre_index),
                     resultx3.getString(Constans.dbColumRespues_respuestaCorret_index)
             );
-            entityArrayListResP1.add(entityRes1);
+            entityArrayListResP2.add(entityRes1);
         }
 
         RespuestasEntity respuestasEntity3 =
@@ -93,7 +93,7 @@ public class Preguntas extends AppCompatActivity {
                     resultx4.getInt(Constans.dbColumRespues_pre_index),
                     resultx4.getString(Constans.dbColumRespues_respuestaCorret_index)
             );
-            entityArrayListResP1.add(entityRes2);
+            entityArrayListResP3.add(entityRes2);
         }
 
         RespuestasEntity respuestasEntity4 =
@@ -106,7 +106,7 @@ public class Preguntas extends AppCompatActivity {
                     resultx5.getInt(Constans.dbColumRespues_pre_index),
                     resultx5.getString(Constans.dbColumRespues_respuestaCorret_index)
             );
-            entityArrayListResP1.add(entityRes3);
+            entityArrayListResP4.add(entityRes3);
         }
 
         RespuestasEntity respuestasEntity5 =
@@ -119,7 +119,7 @@ public class Preguntas extends AppCompatActivity {
                     resultx6.getInt(Constans.dbColumRespues_pre_index),
                     resultx6.getString(Constans.dbColumRespues_respuestaCorret_index)
             );
-            entityArrayListResP1.add(entityRes4);
+            entityArrayListResP5.add(entityRes4);
         }
 
         RespuestasEntity respuestasEntity6 =
@@ -132,7 +132,7 @@ public class Preguntas extends AppCompatActivity {
                     resultx7.getInt(Constans.dbColumRespues_pre_index),
                     resultx7.getString(Constans.dbColumRespues_respuestaCorret_index)
             );
-            entityArrayListResP1.add(entityRes5);
+            entityArrayListResP6.add(entityRes5);
         }
 
         //setear  el valor a los radioButton

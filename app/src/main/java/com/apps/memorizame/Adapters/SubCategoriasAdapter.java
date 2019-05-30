@@ -8,42 +8,42 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-import com.apps.memorizame.Entitys.CategoriasEntity;
+import com.apps.memorizame.Entitys.SubCategoriasEntity;
 import com.apps.memorizame.R;
 import java.util.ArrayList;
 
-public class categoriasAdapter extends RecyclerView.Adapter<categoriasHolder> {
+public class SubCategoriasAdapter extends RecyclerView.Adapter<SubCategoriasHolder> {
 
     //declaracion de variables
-    private ArrayList<CategoriasEntity> entities;
     private Context context;
+    private ArrayList<SubCategoriasEntity> entities;
     private OnItemCLickListener clickItem;
 
-    public categoriasAdapter(ArrayList<CategoriasEntity> entities, Context context){
-        //setear datos desde el constructor
+    public SubCategoriasAdapter(ArrayList<SubCategoriasEntity> entities, Context context){
+        //setear datos por los parametros
         this.entities = entities;
         this.context = context;
     }
 
     @NonNull
     @Override
-    public categoriasHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public SubCategoriasHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         //inflar las vistas del cardview
-        View itemView = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.inicio_frg_categorias_cv,viewGroup, false);
-        return new categoriasHolder(itemView);
+        View view = LayoutInflater.from(context).inflate(R.layout.inicio_frg_sub_categorias_cv, viewGroup, false);
+        return new SubCategoriasHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final categoriasHolder holder, int i) {
+    public void onBindViewHolder(@NonNull SubCategoriasHolder holder, int i) {
         //dato exacto
-        final CategoriasEntity data = entities.get(i);
+        final SubCategoriasEntity data = entities.get(i);
 
         //obtener imagen por el nombre
         @DrawableRes
-        int res = context.getResources().getIdentifier(data.getImagen(), "drawable", context.getPackageName());
+        int res = context.getResources().getIdentifier(data.getImagenSub(), "drawable", context.getPackageName());
         holder.imagen.setBackgroundResource(res);
 
-        holder.nombre.setText(data.getNombre());
+        holder.nombre.setText(data.getNombreSub());
 
         //si es igual a 1 que es completo, oculta el candado
         if(data.getIdEstado() == 1){
@@ -52,7 +52,7 @@ public class categoriasAdapter extends RecyclerView.Adapter<categoriasHolder> {
                 @Override
                 public void onClick(View v) {
                     //habilita el click
-                    clickItem.OnClickItem(data.getIdCategoria());
+                    clickItem.OnClickItem(data.getIdSubCategoria());
                 }
             });
         }else{
@@ -70,7 +70,7 @@ public class categoriasAdapter extends RecyclerView.Adapter<categoriasHolder> {
     public interface OnItemCLickListener{
         void OnClickItem(int position);
     }
-    public void setClickItem(OnItemCLickListener clickItem){ this.clickItem = clickItem; }
+    public void setClickItem(SubCategoriasAdapter.OnItemCLickListener clickItem){ this.clickItem = clickItem; }
 
     @Override
     public int getItemCount() { return entities.size(); }

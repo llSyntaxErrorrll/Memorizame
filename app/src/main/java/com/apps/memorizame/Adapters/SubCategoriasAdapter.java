@@ -44,6 +44,7 @@ public class SubCategoriasAdapter extends RecyclerView.Adapter<SubCategoriasHold
         holder.imagen.setBackgroundResource(res);
 
         holder.nombre.setText(data.getNombreSub());
+        holder.califi.setText(data.getCalificacion());
 
         //si es igual a 1 que es completo, oculta el candado
         if(data.getIdEstado() == 1){

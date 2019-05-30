@@ -12,7 +12,7 @@ public class SubCategoriasHolder extends RecyclerView.ViewHolder {
 
     //elementos del laoyur
     protected ImageView imagen,bloqueo;
-    protected TextView nombre;
+    protected TextView nombre,califi;
 
     public SubCategoriasHolder(@NonNull View itemView) {
         super(itemView);
@@ -21,6 +21,7 @@ public class SubCategoriasHolder extends RecyclerView.ViewHolder {
         //encontrar cada elemento
         imagen = itemView.findViewById(R.id.inicio_sub_categorias_cv_imagen);
         nombre = itemView.findViewById(R.id.inicio_sub_categorias_cv_nombre);
+        califi = itemView.findViewById(R.id.inicio_sub_categorias_cv_califi);
         bloqueo = itemView.findViewById(R.id.inicio_sub_categorias_cv_bloqueo);
     }
 }

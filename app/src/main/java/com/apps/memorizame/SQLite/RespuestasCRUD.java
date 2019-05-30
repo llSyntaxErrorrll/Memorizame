@@ -31,8 +31,8 @@ public class RespuestasCRUD {
     //Consultar por Id
     public Cursor readRespuestas(RespuestasEntity respuestasEntity){
         db = database.getReadableDatabase();
-        String[] argumentos = {String.valueOf(respuestasEntity.getIdRespuesta())};
-        Cursor rs = db.rawQuery("SELECT * FROM "+Constans.dbTbRespue +" WHERE "+ Constans.dbColumRespues_id +
+        String[] argumentos = {String.valueOf(respuestasEntity.getIdPregunta())};
+        Cursor rs = db.rawQuery("SELECT * FROM "+Constans.dbTbRespue +" WHERE "+ Constans.dbColumRespues_pre +
                 " = ? ", argumentos);
         return rs;
     }

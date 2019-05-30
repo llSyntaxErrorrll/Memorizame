@@ -38,6 +38,7 @@ public class Main extends AppCompatActivity {
 
                 PreguntasCRUD preguntas = new PreguntasCRUD(getApplicationContext());
                 Boolean preguntasValidator = preguntas.isFristTime();
+
                 /*
                 Boolean vefifiFinal = false;
 

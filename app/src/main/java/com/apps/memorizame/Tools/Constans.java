@@ -40,6 +40,14 @@ public class Constans {
     public static final int dbColumPregunt_nombre_index = 1;
     public static final String dbColumPregunt_subcate = "ide_sub_categoria";
     public static final int dbColumPregunt_subcate_index = 2;
+    public static final String dbColumPregunt_Respuesta1 = "respuesta_uno";
+    public static final int dbColumPregunt_Respuesta1_index = 3;
+    public static final String dbColumPregunt_Respuesta2 = "respuesta_dos";
+    public static final int dbColumPregunt_Respuesta2_index = 4;
+    public static final String dbColumPregunt_Respuesta3 = "respuesta_tres";
+    public static final int dbColumPregunt_Respuesta3_index = 5;
+    public static final String dbColumPregunt_RespuestaCorrecta = "respuesta_correcta";
+    public static final int dbColumPregunt_RespuestaCorrrecta_index = 6;
 
     //Columnas de la tabla respuestas
     public static final String dbColumRespues_id = "id_respuesta";

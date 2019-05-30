@@ -41,17 +41,11 @@ public class Database extends SQLiteOpenHelper {
         sql = " CREATE TABLE "+ Constans.dbTbPregun+" ("+
                 Constans.dbColumPregunt_id+" INTEGER PRIMARY KEY AUTOINCREMENT,"+
                 Constans.dbColumPregunt_nombre+" TEXT,"+
-                Constans.dbColumPregunt_subcate+" INTEGER)";
-
-        //ejecutar creacion de db
-        db.execSQL(sql);
-
-        //Creación de Tabla Respuestas
-        sql = " CREATE TABLE " + Constans.dbTbRespue+" ("+
-                Constans.dbColumRespues_id+" INTEGER PRIMARY KEY AUTOINCREMENT,"+
-                Constans.dbColumRespues_nombre+" TEXT,"+
-                Constans.dbColumRespues_pre+" INTEGER,"+
-                Constans.dbColumRespues_respuestaCorret+" TEXT)";
+                Constans.dbColumPregunt_subcate+" INTEGER,"+
+                Constans.dbColumPregunt_Respuesta1+" TEXT,"+
+                Constans.dbColumPregunt_Respuesta2+" TEXT,"+
+                Constans.dbColumPregunt_Respuesta3+" TEXT,"+
+                Constans.dbColumPregunt_RespuestaCorrecta+" TEXT)";
 
         //ejecutar creacion de db
         db.execSQL(sql);
@@ -63,7 +57,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+Constans.dbTbCatego);
         db.execSQL("DROP TABLE IF EXISTS "+Constans.dbTbSubCatego);
         db.execSQL("DROP TABLE IF EXISTS "+Constans.dbTbPregun);
-        db.execSQL("DROP TABLE IF EXISTS "+Constans.dbTbRespue);
         onCreate(db);
     }
 }

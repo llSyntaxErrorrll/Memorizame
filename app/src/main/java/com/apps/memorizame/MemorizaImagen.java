@@ -68,6 +68,7 @@ public class MemorizaImagen extends AppCompatActivity {
                 Intent pr = new Intent(MemorizaImagen.this, Preguntas.class);
                 pr.putExtra("id", idSubCategoria);
                 startActivity(pr);
+                stopCountDownTimer();
                 finish();
             }
         });
@@ -112,6 +113,7 @@ public class MemorizaImagen extends AppCompatActivity {
                 Intent pr = new Intent(MemorizaImagen.this,Preguntas.class);
                 pr.putExtra("id", idSubCategoria);
                 startActivity(pr);
+                stopCountDownTimer();
                 finish();
             }
 

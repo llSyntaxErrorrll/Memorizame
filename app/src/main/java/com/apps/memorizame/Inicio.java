@@ -50,8 +50,8 @@ public class Inicio extends AppCompatActivity implements TheInterface, TheInterf
         switch (item.getItemId()){
             case R.id.inicio_menu_instrucciones:
                 //evento click del menu del toolbar instrucciones
-                //Intent intento = new Intent(Inicio.this, Intrucciones.class);
-                //startActivity(intento);
+                Intent intento = new Intent(Inicio.this, Instrucciones.class);
+                startActivity(intento);
                 break;
         }
         return true;

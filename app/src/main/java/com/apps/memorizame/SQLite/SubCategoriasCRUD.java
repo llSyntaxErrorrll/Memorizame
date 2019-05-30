@@ -80,9 +80,9 @@ public class SubCategoriasCRUD {
                 SubCategoriasEntity animal1 = new SubCategoriasEntity("Animales - Reto 1","sub_cat_animal_uno",2,1,"0/6");
                 SubCategoriasEntity animal2 = new SubCategoriasEntity("Animales - Reto 2","sub_cat_animal_dos",2,1,"0/6");
                 SubCategoriasEntity animal3 = new SubCategoriasEntity("Animales - Reto 3","sub_cat_animal_tres",2,1,"0/6");
-                SubCategoriasEntity animal4 = new SubCategoriasEntity("Animales - Reto 4","sub_cat_animal_cuatro",2,0,"6/6");
-                SubCategoriasEntity animal5 = new SubCategoriasEntity("Animales - Reto 5","sub_cat_animal_cinco",2,0,"0/6");
-                SubCategoriasEntity animal6 = new SubCategoriasEntity("Animales - Reto 6","sub_cat_animal_seis",2,0,"0/6");
+                SubCategoriasEntity animal4 = new SubCategoriasEntity("Animales - Reto 4","sub_cat_animal_cuatro",2,1,"6/6");
+                SubCategoriasEntity animal5 = new SubCategoriasEntity("Animales - Reto 5","sub_cat_animal_cinco",2,1,"0/6");
+                SubCategoriasEntity animal6 = new SubCategoriasEntity("Animales - Reto 6","sub_cat_animal_seis",2,1,"0/6");
 
                 //insertar cada entidad
                 insert(animal1);
@@ -94,12 +94,12 @@ public class SubCategoriasCRUD {
 
                 //-------------------------------------------
                 //subcategorias de la primera categoria
-                SubCategoriasEntity calle1 = new SubCategoriasEntity("Calles - Reto 1","sub_cat_calle_uno",3,0,"0/6");
-                SubCategoriasEntity calle2 = new SubCategoriasEntity("Calles - Reto 2","sub_cat_calle_dos",3,0,"0/6");
-                SubCategoriasEntity calle3 = new SubCategoriasEntity("Calles - Reto 3","sub_cat_calle_tres",3,0,"0/6");
-                SubCategoriasEntity calle4 = new SubCategoriasEntity("Calles - Reto 4","sub_cat_calle_cuatro",3,0,"0/6");
-                SubCategoriasEntity calle5 = new SubCategoriasEntity("Calles - Reto 5","sub_cat_calle_cinco",3,0,"0/6");
-                SubCategoriasEntity calle6 = new SubCategoriasEntity("Calles - Reto 6","sub_cat_calle_seis",3,0,"0/6");
+                SubCategoriasEntity calle1 = new SubCategoriasEntity("Calles - Reto 1","sub_cat_calle_uno",3,1,"0/6");
+                SubCategoriasEntity calle2 = new SubCategoriasEntity("Calles - Reto 2","sub_cat_calle_dos",3,1,"0/6");
+                SubCategoriasEntity calle3 = new SubCategoriasEntity("Calles - Reto 3","sub_cat_calle_tres",3,1,"0/6");
+                SubCategoriasEntity calle4 = new SubCategoriasEntity("Calles - Reto 4","sub_cat_calle_cuatro",3,1,"0/6");
+                SubCategoriasEntity calle5 = new SubCategoriasEntity("Calles - Reto 5","sub_cat_calle_cinco",3,1,"0/6");
+                SubCategoriasEntity calle6 = new SubCategoriasEntity("Calles - Reto 6","sub_cat_calle_seis",3,1,"0/6");
 
                 //insertar cada entidad
                 insert(calle1);

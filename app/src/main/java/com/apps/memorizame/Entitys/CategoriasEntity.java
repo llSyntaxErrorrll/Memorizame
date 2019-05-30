@@ -3,7 +3,7 @@ package com.apps.memorizame.Entitys;
 public class CategoriasEntity {
 
     //declaracion de variables
-    private int idEstado;
+    private int idEstado,idCategoria;
     private String nombre, imagen;
 
     public CategoriasEntity(String nombre, String imagen, int idEstado){
@@ -14,7 +14,11 @@ public class CategoriasEntity {
     }
 
     //metodos geters
+    public int getIdCategoria(){ return idCategoria; }
     public String getNombre(){ return nombre; }
     public String getImagen(){ return imagen; }
     public int getIdEstado(){ return idEstado; }
+
+    //metodos setters
+    public void setIdCategoria(int idCategoria){ this.idCategoria = idCategoria; }
 }

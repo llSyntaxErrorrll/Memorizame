@@ -8,6 +8,7 @@ import android.view.WindowManager;
 
 import com.apps.memorizame.SQLite.CategoriasCRUD;
 import com.apps.memorizame.SQLite.PreguntasCRUD;
+import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 
 public class Main extends AppCompatActivity {
 
@@ -30,9 +31,12 @@ public class Main extends AppCompatActivity {
         protected Object doInBackground(Object[] objects) {
             try{
                 CategoriasCRUD categorias = new CategoriasCRUD(getApplicationContext());
-                PreguntasCRUD preguntas = new PreguntasCRUD(getApplicationContext());
+                Boolean categoriasVali = categorias.isFristTime();
 
-                Boolean categoriasValidator = categorias.isFristTime();
+                SubCategoriasCRUD subCategorias = new SubCategoriasCRUD(getApplicationContext());
+                Boolean SubCategoriasVali = subCategorias.isFristTime();
+
+                PreguntasCRUD preguntas = new PreguntasCRUD(getApplicationContext());
                 Boolean preguntasValidator = preguntas.isFristTime();
                 /*
                 Boolean vefifiFinal = false;

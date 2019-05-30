@@ -7,13 +7,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.apps.memorizame.R;
 
-public class InicioHolder extends RecyclerView.ViewHolder {
+public class categoriasHolder extends RecyclerView.ViewHolder {
 
     //elementos que estan en el layout
-    ImageView imagen,bloqueo;
-    TextView nombre;
+    protected ImageView imagen,bloqueo;
+    protected TextView nombre;
 
-    public InicioHolder(@NonNull View itemView) {
+    public categoriasHolder(@NonNull View itemView, final categoriasAdapter.OnItemCLickListener clickItem) {
         super(itemView);
 
         //encontrar cada elemento

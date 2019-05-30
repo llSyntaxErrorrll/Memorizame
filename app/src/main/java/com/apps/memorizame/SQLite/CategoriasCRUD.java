@@ -36,8 +36,7 @@ public class CategoriasCRUD {
 
     public Cursor read(){
         db = database.getReadableDatabase();
-        Cursor rs = db.rawQuery("SELECT * FROM "+Constans.dbTbCatego,null);
-        return rs;
+        return db.rawQuery("SELECT * FROM "+Constans.dbTbCatego,null);
     }
 
     public boolean isFristTime(){

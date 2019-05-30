@@ -49,12 +49,12 @@ public class PreguntasCRUD {
             if(rs){
                 db = database.getWritableDatabase();
                 //entidades quemadas
-                PreguntasEntity casasSub1Pregunta1 = new PreguntasEntity("Casas",1);
-                PreguntasEntity casasSub1Pregunta2 = new PreguntasEntity("Casas",1);
-                PreguntasEntity casasSub1Pregunta3 = new PreguntasEntity("Casas",1);
-                PreguntasEntity casasSub1Pregunta4 = new PreguntasEntity("Casas",1);
-                PreguntasEntity casasSub1Pregunta5 = new PreguntasEntity("Casas",1);
-                PreguntasEntity casasSub1Pregunta6 = new PreguntasEntity("Casas",1);
+                PreguntasEntity casasSub1Pregunta1 = new PreguntasEntity("Hola",1);
+                PreguntasEntity casasSub1Pregunta2 = new PreguntasEntity("K",1);
+                PreguntasEntity casasSub1Pregunta3 = new PreguntasEntity("Hace",1);
+                PreguntasEntity casasSub1Pregunta4 = new PreguntasEntity("Mija",1);
+                PreguntasEntity casasSub1Pregunta5 = new PreguntasEntity("Trabaje",1);
+                PreguntasEntity casasSub1Pregunta6 = new PreguntasEntity("Vos sabes",1);
 
                 //insertar cada entidad
                 insertPreguntas(casasSub1Pregunta1);

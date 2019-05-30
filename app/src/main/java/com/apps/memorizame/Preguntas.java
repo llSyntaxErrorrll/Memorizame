@@ -29,35 +29,25 @@ public class Preguntas extends AppCompatActivity {
         PreguntasEntity preguntasEntity = new PreguntasEntity("", 1);
         PreguntasCRUD preguntasCRUD = new PreguntasCRUD(getApplicationContext());
 
-        String[] preguntasArray = new String[6];
         ArrayList<PreguntasEntity> entityArrayList = new ArrayList<>();
-
         Cursor resultx = preguntasCRUD.readPreguntas(preguntasEntity);
-        int i = 0;
-        while (resultx.moveToNext()){
 
+        while (resultx.moveToNext()){
             PreguntasEntity entity1 = new PreguntasEntity(
                     resultx.getString(Constans.dbColumPregunt_nombre_index),
                     resultx.getInt(Constans.dbColumPregunt_subcate_index)
             );
-
             entityArrayList.add(entity1);
-            preguntasArray[i] = resultx.getString(Constans.dbColumCatego_name_index);
-            //Toast.makeText(this, resultx.getString(Constans.dbColumCatego_name_index), Toast.LENGTH_SHORT).show();
-            i++;
         }
 
         referenciar();
 
-
         txtPregunta1.setText(entityArrayList.get(0).getNombrePregunta());
-        //obtener de db segun el id
-        entityArrayList.get(0).getIdPregunta();
-        txtPregunta2.setText(preguntasArray[1]);
-        txtPregunta3.setText(preguntasArray[2]);
-        txtPregunta4.setText(preguntasArray[3]);
-        txtPregunta5.setText(preguntasArray[4]);
-        txtPregunta6.setText(preguntasArray[5]);
+        txtPregunta2.setText(entityArrayList.get(1).getNombrePregunta());
+        txtPregunta3.setText(entityArrayList.get(2).getNombrePregunta());
+        txtPregunta4.setText(entityArrayList.get(3).getNombrePregunta());
+        txtPregunta5.setText(entityArrayList.get(4).getNombrePregunta());
+        txtPregunta6.setText(entityArrayList.get(5).getNombrePregunta());
 
         /*Bundle parametros = this.getIntent().getExtras();
         if(parametros != null){

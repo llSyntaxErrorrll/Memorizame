@@ -122,7 +122,7 @@ public class PreguntasCRUD {
 
                 //entidades quemadas
                 PreguntasEntity casasSub5Pregunta1 = new PreguntasEntity(res.getString(R.string.casa5pregunta1),5,res.getString(R.string.cuatro),res.getString(R.string.tres),res.getString(R.string.dos),res.getString(R.string.dos));
-                PreguntasEntity casasSub5Pregunta2 = new PreguntasEntity(res.getString(R.string.casa5pregunta2),5,res.getString(R.string.verde1),res.getString(R.string.azul),res.getString(R.string.blanco),res.getString(R.string.verde1));
+                PreguntasEntity casasSub5Pregunta2 = new PreguntasEntity(res.getString(R.string.casa5pregunta2),5,res.getString(R.string.verde1),res.getString(R.string.azul),res.getString(R.string.blanco),res.getString(R.string.azul));
                 PreguntasEntity casasSub5Pregunta3 = new PreguntasEntity(res.getString(R.string.casa5pregunta3),5,res.getString(R.string.metal),res.getString(R.string.madera),res.getString(R.string.plastico),res.getString(R.string.madera));
                 PreguntasEntity casasSub5Pregunta4 = new PreguntasEntity(res.getString(R.string.casa5pregunta4),5,res.getString(R.string.lapizyc),res.getString(R.string.compuyc),res.getString(R.string.adornoyflo),res.getString(R.string.adornoyflo));
                 PreguntasEntity casasSub5Pregunta5 = new PreguntasEntity(res.getString(R.string.casa5pregunta5),5,res.getString(R.string.rombo),res.getString(R.string.cuadrado),res.getString(R.string.rectangulo),res.getString(R.string.rombo));

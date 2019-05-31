@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dim_dosc">
 
-        <ImageView
+        <com.jgabrielfreitas.core.BlurImageView
             android:id="@+id/inicio_sub_categorias_cv_imagen"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 import com.apps.memorizame.Entitys.SubCategoriasEntity;
 import com.apps.memorizame.R;
+import com.apps.memorizame.Tools.Constans;
+
 import java.util.ArrayList;
 
 public class SubCategoriasAdapter extends RecyclerView.Adapter<SubCategoriasHolder> {
@@ -41,10 +43,10 @@ public class SubCategoriasAdapter extends RecyclerView.Adapter<SubCategoriasHold
         //obtener imagen por el nombre
         @DrawableRes
         int res = context.getResources().getIdentifier(data.getImagenSub(), "drawable", context.getPackageName());
-        holder.imagen.setBackgroundResource(res);
+        holder.imagen.setImageResource(res);
 
         holder.nombre.setText(data.getNombreSub());
-        holder.califi.setText(data.getCalificacion());
+        holder.califi.setText(data.getCalificacion()+" / 6");
 
         //si es igual a 1 que es completo, oculta el candado
         if(data.getIdEstado() == 1){
@@ -57,6 +59,8 @@ public class SubCategoriasAdapter extends RecyclerView.Adapter<SubCategoriasHold
                 }
             });
         }else{
+            //mostrar bloquedo, borrosear img.
+            holder.imagen.setBlur(Constans.blurRadius);
             holder.bloqueo.setVisibility(View.VISIBLE);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

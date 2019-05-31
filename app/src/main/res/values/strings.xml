@@ -13,4 +13,7 @@
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
 
+    <string name="tiempo">00:01:00</string>
+    <string name="terminar">Terminar</string>
+
 </resources>

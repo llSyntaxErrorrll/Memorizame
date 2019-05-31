@@ -13,8 +13,6 @@ import com.apps.memorizame.Adapters.SubCategoriasAdapter;
 import com.apps.memorizame.Entitys.SubCategoriasEntity;
 import com.apps.memorizame.SQLite.SubCategoriasCRUD;
 import com.apps.memorizame.Tools.Constans;
-import com.apps.memorizame.Tools.TheInterfaceTwo;
-
 import java.util.ArrayList;
 
 public class InicioFrgSubCategorias extends Fragment {
@@ -23,7 +21,7 @@ public class InicioFrgSubCategorias extends Fragment {
     private RecyclerView recycler;
     private View view;
     private int idCategorias=0;
-    private TheInterfaceTwo communicatorxTwo;
+    private ClickSubCategorias clickSubCategorias;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,7 +47,7 @@ public class InicioFrgSubCategorias extends Fragment {
         //lista de entidades
         ArrayList<SubCategoriasEntity> entities = new ArrayList<>();
 
-        SubCategoriasEntity args = new SubCategoriasEntity(null,null,idCategorias,0,null);
+        SubCategoriasEntity args = new SubCategoriasEntity(null,null,idCategorias,0,0);
 
         //lectura de los datos de db
         SubCategoriasCRUD crud = new SubCategoriasCRUD(getContext());
@@ -63,7 +61,7 @@ public class InicioFrgSubCategorias extends Fragment {
                     rs.getString(Constans.dbColumSubCatego_imag_index),
                     rs.getInt(Constans.dbColumSubCatego_cate_index),
                     rs.getInt(Constans.dbColumSubCatego_esta_index),
-                    rs.getString(Constans.dbColumSubCatego_cali_index)
+                    rs.getInt(Constans.dbColumSubCatego_cali_index)
             );
             entity.setIdSubCategoria(rs.getInt(Constans.dbColumSubCatego_id_index));
             entities.add(entity);
@@ -74,7 +72,7 @@ public class InicioFrgSubCategorias extends Fragment {
         adapter.setClickItem(new SubCategoriasAdapter.OnItemCLickListener() {
             @Override
             public void OnClickItem(int position) {
-                communicatorxTwo.comunicadorxTwo(position);
+                clickSubCategorias.ClickSubCategorias(position);
             }
         });
 
@@ -87,7 +85,11 @@ public class InicioFrgSubCategorias extends Fragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        communicatorxTwo = (TheInterfaceTwo) context;
+        clickSubCategorias = (ClickSubCategorias) context;
+    }
+
+    public interface ClickSubCategorias{
+        void ClickSubCategorias(int position);
     }
 
     private void asignarIDs(){

@@ -58,4 +58,8 @@ public class Constans {
     public static final int dbColumRespues_pre_index = 2;
     public static final String dbColumRespues_respuestaCorret = "respuesta_correcta";
     public static final int dbColumRespues_respuestaCorret_index = 3;
+
+
+    //otras constantes
+    public static final int blurRadius = 10;
 }

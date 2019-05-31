@@ -3,10 +3,10 @@ package com.apps.memorizame.Entitys;
 public class SubCategoriasEntity {
 
     //declaracion de variables
-    private String nombreSub,imagenSub,calificacion;
-    private int idSubCategoria,idCategoria,idEstado;
+    private String nombreSub,imagenSub;
+    private int idSubCategoria,idCategoria,idEstado,calificacion;
 
-    public SubCategoriasEntity(String nombreSub, String imagenSub, int idCategoria, int idEstado, String calificacion){
+    public SubCategoriasEntity(String nombreSub, String imagenSub, int idCategoria, int idEstado, int calificacion){
         //setear datos
         this.nombreSub = nombreSub;
         this.imagenSub = imagenSub;
@@ -19,7 +19,7 @@ public class SubCategoriasEntity {
     public int getIdSubCategoria(){ return idSubCategoria; }
     public String getNombreSub(){ return nombreSub; }
     public String getImagenSub(){ return imagenSub; }
-    public String getCalificacion(){ return calificacion; }
+    public int getCalificacion(){ return calificacion; }
     public int getIdCategoria(){ return idCategoria; }
     public int getIdEstado(){ return idEstado; }
 

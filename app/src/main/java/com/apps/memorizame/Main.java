@@ -39,28 +39,21 @@ public class Main extends AppCompatActivity {
                 PreguntasCRUD preguntas = new PreguntasCRUD(getApplicationContext());
                 Boolean preguntasValidator = preguntas.isFristTime();
 
-                /*
-                Boolean vefifiFinal = false;
-
-                if(categoriasValidator){
-                    vefifiFinal = true;
-                }
+                Thread.sleep(1500);
 
                 Intent pasar = null;
-
-                if (vefifiFinal){
-                    //instrucciones 1ra ves
-                    //pasar = new Intent(Main.this, Instrucciones.class);
-                }else{
-                    //pasar al inicio
+                //es la 1ra ves
+                if(categoriasVali || SubCategoriasVali || preguntasValidator){
                     pasar = new Intent(Main.this, Inicio.class);
-                }*/
+                    startActivity(pasar);
 
+                    pasar = new Intent(Main.this, Instrucciones.class);
+                    startActivity(pasar);
+                }else{
+                    pasar = new Intent(Main.this, Inicio.class);
+                    startActivity(pasar);
+                }
 
-
-                Thread.sleep(1500);
-                Intent pasar = new Intent(Main.this, Inicio.class);
-                startActivity(pasar);
                 finish();
             }catch (Exception e){
                 e.notify();

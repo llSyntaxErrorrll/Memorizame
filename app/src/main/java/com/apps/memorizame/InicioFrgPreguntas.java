@@ -200,13 +200,6 @@ public class InicioFrgPreguntas extends Fragment {
                     }
                     String tot = String.valueOf(total);
 
-
-
-                    //TODO quitar esto
-                    total = 6;
-
-
-
                     //entidad que tiene la calificacion y el id actual
                     SubCategoriasEntity entity = new SubCategoriasEntity(null,null,idCategoria,0,total);
                     entity.setIdSubCategoria(idSubCategoria);

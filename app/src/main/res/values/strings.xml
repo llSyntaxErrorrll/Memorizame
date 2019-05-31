@@ -7,11 +7,110 @@
     <string name="memorizaimagen">Memoriza Imagen</string>
     <string name="preguntas">Preguntas</string>
 
+
     <!--Categoria Casas -->
     <!-- casa reto 1-->
     <string name="casa1pregunta1">1. Cuantas materas visualizaste en la entrada:</string>
+    <string name="casa1pregunta2">2. Cuantos rectángulos (placas de concreto) hay en el camino a la entrada:</string>
+    <string name="casa1pregunta3">3. La puerta de la cochera de que material es:</string>
+    <string name="casa1pregunta4">4. En cuantas secciones están dividas los arboles de la entrada de la casa:</string>
+    <string name="casa1pregunta5">5. En el cielo se puede ver que es:</string>
+    <string name="casa1pregunta6">6. En la ventana del segundo piso a la izquierda puedes deducir que es:</string>
+
+    <!-- casa reto 2-->
+    <string name="casa2pregunta1">1. El balcón del segundo piso y ventanas de que material son:</string>
+    <string name="casa2pregunta2">2. En el techo de la casa hay:</string>
+    <string name="casa2pregunta3">3. En la entrada de la casa que se puede observar:</string>
+    <string name="casa2pregunta4">4. Cuantos postes pequeños hay en el patio:</string>
+    <string name="casa2pregunta5">5. La fachada de la casa está:</string>
+    <string name="casa2pregunta6">6. Cuantas casas hay en la colina:</string>
+
+    <!-- casa reto 3-->
+    <string name="casa3pregunta1">1. En el techo la lampara que forma tiene:</string>
+    <string name="casa3pregunta2">2. El recipiente de la cocina cuantas flores tiene:</string>
+    <string name="casa3pregunta3">3. El techo de la sala en que material esta hecho:</string>
+    <string name="casa3pregunta4">4. Cuantos estantes hay en la sala:</string>
+    <string name="casa3pregunta5">5. En la pared que divide la cocina de la sala hay:</string>
+    <string name="casa3pregunta6">6. Cuantas Luces se pueden visualizar en el techo de la cocina:</string>
+
+    <!-- casa reto 4-->
+    <string name="casa4pregunta1">1. De qué color es la nevera:</string>
+    <string name="casa4pregunta2">2. Que figura hay en el cuadro de la izquierda:</string>
+    <string name="casa4pregunta3">3. Los adornos debajo de la mesa del televisor de qué color son:</string>
+    <string name="casa4pregunta4">4. La almohada negra del sofá qué figura tiene:</string>
+    <string name="casa4pregunta5">5. Sobre el comedor en el techo que hay:</string>
+    <string name="casa4pregunta6">6. De que material es la mesa donde se encuentra el televisor:</string>
+
+    <!-- casa reto 5-->
+    <string name="casa5pregunta1">1. Cuantas sillas hay:</string>
+    <string name="casa5pregunta2">2. De que color son esas Sillas:</string>
+    <string name="casa5pregunta3">3. De que material es la puerta de entrada:</string>
+    <string name="casa5pregunta4">4. En la mesa más grande a lado del sofá que elementos hay:</string>
+    <string name="casa5pregunta5">5. Que figura geométrica tiene la alfombra:</string>
+    <string name="casa5pregunta6">6. De que color es el sofá:</string>
+
+    <!-- casa reto 6-->
+    <string name="casa6pregunta1">1. De qué color es la nevera:</string>
+    <string name="casa6pregunta2">2. Que figura hay en el cuadro de la izquierda:</string>
+    <string name="casa6pregunta3">3. Los adornos debajo de la mesa del televisor de qué color son:</string>
+    <string name="casa6pregunta4">4. La almohada negra del sofá qué figura tiene:</string>
+    <string name="casa6pregunta5">5. Sobre el comedor en el techo que hay:</string>
+    <string name="casa6pregunta6">6. De que material es la mesa donde se encuentra el televisor:</string>
+
+    <!--Categoria Calles -->
+    <!-- calle reto 1-->
+    <string name="calle1pregunta1">1. Cuantas esculturas en piedra puedes ver en la imagen:</string>
+    <string name="calle1pregunta2">2. La señal de transito del medio de la vía que número muestra:</string>
+    <string name="calle1pregunta3">3. Cuantos autos blancos puedes visualizar:</string>
+    <string name="calle1pregunta4">4. Cuantos autos negros hay en la imagen:</string>
+    <string name="calle1pregunta5">5. Cuantos árboles hay a la izquierda de la imagen:</string>
+    <string name="calle1pregunta6">6. Que símbolo trae la señal de transito de la izquierda:</string>
+
+    <!-- calle reto 2-->
+    <string name="calle2pregunta1">1. Cuantos tableros hay en el peaje:</string>
+    <string name="calle2pregunta2">2. Cuantas señales de tránsito hay:</string>
+    <string name="calle2pregunta3">3. Que colores hay en la señal de transito:</string>
+    <string name="calle2pregunta4">4. De que color son los tableros del peaje:</string>
+    <string name="calle2pregunta5">5. El peaje en que dirección va según la imagen:</string>
+    <string name="calle2pregunta6">6. El cielo de la imagen se encuentra:</string>
+
+    <!-- calle reto 3-->
+    <string name="calle3pregunta1">1. Cuantos desvíos de la vía principal ves en la imagen:</string>
+    <string name="calle3pregunta2">2. Cuantos autos amarillos hay en la imagen:</string>
+    <string name="calle3pregunta3">3. De que color es la señal de desvío:</string>
+    <string name="calle3pregunta4">4. El contenido de la señal de desvío de qué color es:</string>
+    <string name="calle3pregunta5">5. La vía principal de cuantas calzadas es:</string>
+    <string name="calle3pregunta6">6. De cuantas calzadas es el desvío de la derecha:</string>
+
+    <!-- calle reto 4-->
+    <string name="calle4pregunta1">1. Cuantos autos rojos hay:</string>
+    <string name="calle4pregunta2">2. Que dice el texto de la imagen:</string>
+    <string name="calle4pregunta3">3. Cuantos árboles hay al lado derecho de la imagen:</string>
+    <string name="calle4pregunta4">4. La vía principal de cuantas calzadas es:</string>
+    <string name="calle4pregunta5">5. Cuantos autos están de regreso según la imagen:</string>
+    <string name="calle4pregunta6">6. De que color es el texto de la imagen:</string>
+
+    <!-- calle reto 5-->
+    <string name="calle5pregunta1">1. Cuantos autos amarillos hay:</string>
+    <string name="calle5pregunta2">2. De que color es la seña de transito que divide la vía:</string>
+    <string name="calle5pregunta3">3. Cuantos buses hay:</string>
+    <string name="calle5pregunta4">4. Los autos amarillos en qué dirección van:</string>
+    <string name="calle5pregunta5">5. La zona verde del lado derecho a que asemeja a:</string>
+    <string name="calle5pregunta6">6. Los autos amarillos en qué dirección van:</string>
+
+    <!-- calle reto 6-->
+    <string name="calle6pregunta1">1. Cuantos conos de transito hay en la imagen:</string>
+    <string name="calle6pregunta2">2. De que color es la señal de transito que están colocando:</string>
+    <string name="calle6pregunta3">3. Cuantas personas hay en la imagen:</string>
+    <string name="calle6pregunta4">4. Cuantas vías transitables hay en la imagen:</string>
+    <string name="calle6pregunta5">5. De que color es la chaqueta del hombre en la moto:</string>
+    <string name="calle6pregunta6">6. Cuantos autos hay en la imagen:</string>
+
+
 
     <!-- Respuestas  -->
+
+    <!--numeros-->
     <string name="cero">Cero</string>
     <string name="uno">Uno</string>
     <string name="dos">Dos</string>
@@ -23,8 +122,93 @@
     <string name="ocho">Ocho</string>
     <string name="nueve">Nueve</string>
     <string name="diez">Diez</string>
+    <string name="sesenta">Sesenta</string>
+    <string name="setenta">Setenta</string>
+    <string name="cincuenta">Cincuenta</string>
+
+    <!--otros-->
+    <string name="verde1">Verde</string>
+    <string name="azul">Azul</string>
+    <string name="blanco">Blanco</string>
+    <string name="negro">Negro</string>
+    <string name="beige">Beige</string>
+    <string name="amarillo">Amarillo</string>
+    <string name="gris">Gris</string>
+    <string name="morado">Morado</string>
+    <string name="rojo">Rojo</string>
+    <string name="naranja">Naranja</string>
+    <string name="blancoynegro">Blanco y Negro</string>
+    <string name="azulynegro">Azul y Negro</string>
+    <string name="blancoyazul">Blanco y Azul</string>
+    <string name="metal">Metal</string>
+    <string name="madera">Madera</string>
+    <string name="plastico">Plástico</string>
+    <string name="lapizyc">Lapíz y Cuaderno</string>
+    <string name="compuyc">Computador y cenicero</string>
+    <string name="adornoyflo">Adorno de vela y Florero</string>
+    <string name="rombo">Rombo</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="auto">Auto</string>
+    <string name="bicicleta">Bicicleta</string>
+    <string name="avion">Avión</string>
+    <string name="perro">Perro</string>
+    <string name="gato">Gato</string>
+    <string name="raton">Ratón</string>
+    <string name="ventilador">Ventilador</string>
+    <string name="lampara">Lampara</string>
+    <string name="adorno">Adorno</string>
+    <string name="antena">Antena</string>
+    <string name="chimenea">Chimenea</string>
+    <string name="pajaros">Pájaros</string>
+    <string name="ubicicleta">Una Bicicleta</string>
+    <string name="upersoperro">Una Persona y su Perro</string>
+    <string name="umesabanca">Una Mesa y Una Banca</string>
+    <string name="umatera">Una Matera</string>
+    <string name="usilla">Una Silla</string>
+    <string name="ulampara">Una Lampara</string>
+    <string name="ucuadro">Un Cuadro</string>
+    <string name="ureloj">Un Reloj</string>
+    <string name="ninguno">Ninguno</string>
+    <string name="pintada">Pintada</string>
+    <string name="eladrillo">En Ladrillo</string>
+    <string name="econcreto">En Concreto</string>
+    <string name="proyetor">Proyector</string>
+    <string name="cubica">Cubica</string>
+    <string name="esferica">Esférica</string>
+    <string name="manana">Mañana</string>
+    <string name="tarde">Tarde</string>
+    <string name="noche">Noche</string>
+    <string name="lsala">La Sala</string>
+    <string name="lcocina">La Cocina</string>
+    <string name="lalcoba">La Alcoba</string>
+    <string name="verblanrojo">Verde, Blanco y Rojo</string>
+    <string name="naazulroj">Naranja, Azul y Gris</string>
+    <string name="azulnaraver">Azul, Naranja y Verde</string>
+    <string name="ida">Ida</string>
+    <string name="regreso">Regreso</string>
+    <string name="ambos">Ambos</string>
+    <string name="nublado">Nublado</string>
+    <string name="despejado">Despejado</string>
+    <string name="estrellado">Estrellado</string>
+    <string name="doblecalzada">Doble Calzada</string>
+    <string name="triplecalzada">Trible Calzada</string>
+    <string name="unacalzada">Una Calzada</string>
+    <string name="menos">Menos</string>
+    <string name="mas">Más</string>
+    <string name="peaton">Peatón</string>
+    <string name="losdade">Los Dos a la Derecha</string>
+    <string name="unootroizquier">Uno a la Derecha y otro a la Izquierda</string>
+    <string name="losdaiz">Los Dos a la Izquierda</string>
+    <string name="canfut">Cancha de Fútbol</string>
+    <string name="parqueadero">Parqueadero</string>
+    <string name="parque">Parque</string>
+    <string name="arbol">Árbol</string>
+    <string name="andes">Andes</string>
+    <string name="andro">Andro</string>
 
 
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_instrucciones">Instrucciones</string>
     <string name="tab_text_1">Tab 1</string>

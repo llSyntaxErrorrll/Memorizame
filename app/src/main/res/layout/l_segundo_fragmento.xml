@@ -45,4 +45,20 @@
         android:textAlignment="center"
         android:layout_marginBottom="@dimen/dim_10"
         />
+
+    <ImageView
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="@dimen/dim_cien_50"
+        android:src="@mipmap/flechaderecha"
+        android:paddingRight="-12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="@dimen/dim_cien_50"
+        android:src="@mipmap/flechaizquierda"
+        android:paddingRight="-12dp"
+        android:layout_alignParentleft="true"
+        android:layout_centerVertical="true"/>
+
 </RelativeLayout>

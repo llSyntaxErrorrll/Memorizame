@@ -27,10 +27,10 @@ public class Instrucciones extends AppCompatActivity implements Tercer_fragment.
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
 
-        Pasar();
+        //Pasar();
     }
 
-    private void Pasar() {
+   /* private void Pasar() {
 
         new Thread(new Runnable() {
             @Override
@@ -55,7 +55,7 @@ public class Instrucciones extends AppCompatActivity implements Tercer_fragment.
             }
         }).start();
 
-    }
+    }*/
 
 
     @Override

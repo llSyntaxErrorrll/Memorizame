@@ -1,7 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Amarillo">
+    android:background="@color/AzulClaro">
 
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/Concentrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concentrate"
+        android:textColor="@color/Blanco2"
+        android:textSize="@dimen/dim_50"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/dim_10"
+        />
+
+    <ImageView
+        android:id="@+id/retrato"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@id/Concentrate"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/landscape"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dim_20"/>
+
+
+    <ImageView
+        android:layout_below="@id/retrato"
+        android:id="@+id/Binoculares"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/binoculars"
+        />
+    <TextView
+        android:id="@+id/Mira"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mira cuidadosamente"
+        android:textColor="@color/Blanco2"
+        android:textSize="@dimen/dim_50"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/dim_10"
+        />
+</RelativeLayout>

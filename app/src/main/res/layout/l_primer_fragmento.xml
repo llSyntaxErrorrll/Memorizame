@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Azul">
+    android:background="@color/AzulClaro">
+
+    <TextView
+        android:id="@+id/txtConocenos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/txtConocenos"
+        android:text="Escogue una categoria"
+        android:textAlignment="center"
+        android:textColor="@color/Blanco"
+        android:textSize="@dimen/dim_50" />
+
+    <ImageView
+        android:id="@+id/imgConocemos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/presentation"
+        android:layout_centerInParent="true"
+        />
 
 
-</LinearLayout>
+    </RelativeLayout>

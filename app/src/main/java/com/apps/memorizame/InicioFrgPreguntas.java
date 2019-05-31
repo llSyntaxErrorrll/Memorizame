@@ -201,6 +201,12 @@ public class InicioFrgPreguntas extends Fragment {
                     String tot = String.valueOf(total);
 
 
+
+                    //TODO quitar esto
+                    total = 6;
+
+
+
                     //entidad que tiene la calificacion y el id actual
                     SubCategoriasEntity entity = new SubCategoriasEntity(null,null,idCategoria,0,total);
                     entity.setIdSubCategoria(idSubCategoria);
@@ -213,7 +219,7 @@ public class InicioFrgPreguntas extends Fragment {
                     //imprime resultados
                     AlertDialog.Builder dialogo1 = new AlertDialog.Builder(view.getContext());
                     dialogo1.setTitle("Genial!!!");
-                    dialogo1.setMessage("        Tu puntaje es de "+tot+"/6");
+                    dialogo1.setMessage("Tu puntaje es de: "+tot+" / 6");
                     dialogo1.setCancelable(false);
                     dialogo1.setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialogo1, int id) {

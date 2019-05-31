@@ -151,6 +151,26 @@ public class InicioFrgImagen extends Fragment {
         return hms;
     }
 
+    @Override
+    public void onDestroyView() {
+        //Método que detiene el temporizador
+        countDownTimer.cancel();
+        super.onDestroyView();
+    }
+
+    @Override
+    public void onDetach() {
+        //Método que detiene el temporizador
+        countDownTimer.cancel();
+        super.onDetach();
+    }
+
+    @Override
+    public void onDestroy() {
+        //Método que detiene el temporizador
+        countDownTimer.cancel();
+        super.onDestroy();
+    }
 
     @Override
     public void onAttach(Context context) {

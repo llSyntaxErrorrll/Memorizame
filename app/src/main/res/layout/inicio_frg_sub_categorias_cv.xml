@@ -43,8 +43,8 @@
 
         <ImageView
             android:id="@+id/inicio_sub_categorias_cv_bloqueo"
-            android:layout_width="@dimen/dim_95"
-            android:layout_height="@dimen/dim_95"
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_80"
             android:padding="@dimen/dim_20"
             android:background="@drawable/shape_circle"
             android:layout_centerInParent="true"

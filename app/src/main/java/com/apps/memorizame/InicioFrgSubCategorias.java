@@ -47,7 +47,7 @@ public class InicioFrgSubCategorias extends Fragment {
         //lista de entidades
         ArrayList<SubCategoriasEntity> entities = new ArrayList<>();
 
-        SubCategoriasEntity args = new SubCategoriasEntity(null,null,idCategorias,0,null);
+        SubCategoriasEntity args = new SubCategoriasEntity(null,null,idCategorias,0,0);
 
         //lectura de los datos de db
         SubCategoriasCRUD crud = new SubCategoriasCRUD(getContext());
@@ -61,7 +61,7 @@ public class InicioFrgSubCategorias extends Fragment {
                     rs.getString(Constans.dbColumSubCatego_imag_index),
                     rs.getInt(Constans.dbColumSubCatego_cate_index),
                     rs.getInt(Constans.dbColumSubCatego_esta_index),
-                    rs.getString(Constans.dbColumSubCatego_cali_index)
+                    rs.getInt(Constans.dbColumSubCatego_cali_index)
             );
             entity.setIdSubCategoria(rs.getInt(Constans.dbColumSubCatego_id_index));
             entities.add(entity);

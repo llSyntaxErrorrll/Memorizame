@@ -51,8 +51,8 @@ public class CategoriasCRUD {
                 db = database.getWritableDatabase();
                 //entidades quemadas
                 CategoriasEntity casas = new CategoriasEntity("Casas", "cat_casas",1);
-                CategoriasEntity animal = new CategoriasEntity("Animales","cat_animales",1);
-                CategoriasEntity calles = new CategoriasEntity("Calles","cat_calle",1);
+                CategoriasEntity animal = new CategoriasEntity("Animales","cat_animales",0);
+                CategoriasEntity calles = new CategoriasEntity("Calles","cat_calle",0);
 
                 //insertar cada entidad
                 insert(casas);

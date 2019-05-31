@@ -308,12 +308,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub16Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub17Pregunta1 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub17Pregunta2 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub17Pregunta3 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub17Pregunta4 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub17Pregunta5 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub17Pregunta6 = new PreguntasEntity("Casas",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta1 = new PreguntasEntity("Calles 5 - 1",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta2 = new PreguntasEntity("Calles 5 - 2",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta3 = new PreguntasEntity("Calles 5 - 3",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta4 = new PreguntasEntity("Calles 5 - 4",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta5 = new PreguntasEntity("Calles 5 - 5",17,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub17Pregunta6 = new PreguntasEntity("Calles 5 - 6",17,"respuesta1","respuesta2","respuesta3","rc");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub17Pregunta1);
@@ -324,12 +324,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub17Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub18Pregunta1 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub18Pregunta2 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub18Pregunta3 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub18Pregunta4 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub18Pregunta5 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
-                PreguntasEntity casasSub18Pregunta6 = new PreguntasEntity("Casas",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta1 = new PreguntasEntity("Calles 6 - 1",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta2 = new PreguntasEntity("Calles 6 - 2",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta3 = new PreguntasEntity("Calles 6 - 3",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta4 = new PreguntasEntity("Calles 6 - 4",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta5 = new PreguntasEntity("Calles 6 - 5",18,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub18Pregunta6 = new PreguntasEntity("Calles 6 - 6",18,"respuesta1","respuesta2","respuesta3","rc");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub18Pregunta1);

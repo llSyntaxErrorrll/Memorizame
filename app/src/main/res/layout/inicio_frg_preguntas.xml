@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioFrgPreguntas">
+
+    <ScrollView
+        android:id="@+id/scView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Preguntas">
+
+        <LinearLayout
+            android:padding="@dimen/dim_10"
+            android:orientation="vertical"
+            style="@style/tamanos">
+
+            <TextView
+                android:id="@+id/txtTitulo"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_dim_20"
+                style="@style/tamanos"
+                android:text="Preguntas:"/>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaUno"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                style="@style/tamanos"
+                android:id="@+id/rgUno">
+
+                <RadioButton
+                    style="@style/tamanos"
+                    android:id="@+id/rbUno"
+                    android:text="Respuesta1" />
+
+                <RadioButton
+                    style="@style/tamanos"
+                    android:id="@+id/rbDos"
+                    android:text="Respuesta1" />
+
+                <RadioButton
+                    style="@style/tamanos"
+                    android:id="@+id/rbTres"
+                    android:text="Respuesta1" />
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaDos"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                style="@style/tamanos"
+                android:id="@+id/rgDos">
+
+                <RadioButton
+                    android:id="@+id/rbCuatro"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbCinco"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbSeis"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaTres"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                android:id="@+id/rgTres"
+                style="@style/tamanos">
+
+                <RadioButton
+                    android:id="@+id/rbSiete"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbOcho"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbNueve"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaCuatro"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                android:id="@+id/rgCuatro"
+                style="@style/tamanos">
+
+                <RadioButton
+                    android:id="@+id/rbDiez"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbOnce"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbDoce"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaCinco"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                android:id="@+id/rgCinco"
+                style="@style/tamanos">
+
+                <RadioButton
+                    android:id="@+id/rbTrece"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbCatorce"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbQuince"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/textViewRes"
+                android:id="@+id/txtPreguntaSeis"
+                android:text="Pregunta 1."/>
+            <RadioGroup
+                android:id="@+id/rgSeis"
+                style="@style/tamanos">
+
+                <RadioButton
+                    android:id="@+id/rbDiezySeis"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbDiezysiete"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+                <RadioButton
+                    android:id="@+id/rbDiezyocho"
+                    style="@style/tamanos"
+                    android:text="Respuesta1"/>
+
+            </RadioGroup>
+
+            <Button
+                android:layout_marginTop="@dimen/dim_15"
+                android:id="@+id/btnterminarPregu"
+                android:layout_width="match_parent"
+                android:textColor="@color/Blanco"
+                android:background="@color/Azul"
+                android:layout_height="wrap_content"
+                android:text="Terminar"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

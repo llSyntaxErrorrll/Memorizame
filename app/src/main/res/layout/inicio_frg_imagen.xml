@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InicioFrgImagen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ortiz.touchview.TouchImageView
+            android:layout_above="@id/elementos"
+            android:id="@+id/imgTouchUno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/elementos"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_90">
+
+            <ProgressBar
+                android:id="@+id/progressBarCircle"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dim_90"
+                android:layout_height="@dimen/dim_90"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/circulo_2"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="100"
+                android:progressDrawable="@drawable/circulo_1"
+                android:rotation="-90" >
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dim_25"
+                android:layout_marginStart="@dimen/dim_25"
+                android:layout_marginBottom="39dp"
+                android:text="@string/tiempo"
+                android:textColor="@color/GrisAzuladoOscuro"
+                android:textSize="@dimen/txt_dim_10" />
+
+            <Button
+                android:id="@+id/btnTerminar"
+                android:background="@color/Azul"
+                android:textColor="@color/Blanco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim_15"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/progressBarCircle"
+                android:text="@string/terminar" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

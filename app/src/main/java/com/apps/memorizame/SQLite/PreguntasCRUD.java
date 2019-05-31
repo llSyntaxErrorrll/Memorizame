@@ -94,7 +94,7 @@ public class PreguntasCRUD {
                 PreguntasEntity casasSub3Pregunta3 = new PreguntasEntity(res.getString(R.string.casa3pregunta3),3,res.getString(R.string.plastico),res.getString(R.string.madera),res.getString(R.string.metal),res.getString(R.string.madera));
                 PreguntasEntity casasSub3Pregunta4 = new PreguntasEntity(res.getString(R.string.casa3pregunta4),3,res.getString(R.string.cinco),res.getString(R.string.seis),res.getString(R.string.siete),res.getString(R.string.cinco));
                 PreguntasEntity casasSub3Pregunta5 = new PreguntasEntity(res.getString(R.string.casa3pregunta5),3,res.getString(R.string.ucuadro),res.getString(R.string.ureloj),res.getString(R.string.ulampara),res.getString(R.string.ureloj));
-                PreguntasEntity casasSub3Pregunta6 = new PreguntasEntity(res.getString(R.string.casa3pregunta6),3,res.getString(R.string.siete),res.getString(R.string.nueve),res.getString(R.string.ocho),res.getString(R.string.ocho));
+                PreguntasEntity casasSub3Pregunta6 = new PreguntasEntity(res.getString(R.string.casa3pregunta6),3,res.getString(R.string.siete),res.getString(R.string.nueve),res.getString(R.string.ocho),res.getString(R.string.nueve));
 
                 //insertar cada entidad
                 insertPreguntas(casasSub3Pregunta1);

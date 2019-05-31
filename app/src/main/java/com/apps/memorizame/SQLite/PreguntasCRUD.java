@@ -153,12 +153,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub6Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub7Pregunta1 = new PreguntasEntity("Cuantas patas del perro NO estaban tocando el suelo",7,"Cero","Cuatro","Dos","Cuatro");
-                PreguntasEntity casasSub7Pregunta2 = new PreguntasEntity("Cual era el tamaño del perro",7,"Grande","Mediano","Pequeño","Mediano");
-                PreguntasEntity casasSub7Pregunta3 = new PreguntasEntity("Cual era el color del collar",7,"Violeta","Azul","Rojo","Rojo");
-                PreguntasEntity casasSub7Pregunta4 = new PreguntasEntity("Una característica del fondo de la imagen",7,"Fondo borroso","Fondo opaco","Fondo desgastado","Fondo borroso");
-                PreguntasEntity casasSub7Pregunta5 = new PreguntasEntity("Cual era el estado de ánimo del perro",7,"Contento","Aburrido","Enojado","Contento");
-                PreguntasEntity casasSub7Pregunta6 = new PreguntasEntity("En qué lugar se encontraba el perro",7,"Montaña","Parque","Bosque","Bosque");
+                PreguntasEntity casasSub7Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c1_p1),7,res.getString(R.string.cero),res.getString(R.string.cuatro),res.getString(R.string.dos),res.getString(R.string.cuatro));
+                PreguntasEntity casasSub7Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c1_p2),7,res.getString(R.string.anim_c1_p2_r1),res.getString(R.string.anim_c1_p2_r2),res.getString(R.string.anim_c1_p2_r3),res.getString(R.string.anim_c1_p2_r2));
+                PreguntasEntity casasSub7Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c1_p3),7,"Violeta","Azul","Rojo","Rojo");
+                PreguntasEntity casasSub7Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c1_p4),7,"Fondo borroso","Fondo opaco","Fondo desgastado","Fondo borroso");
+                PreguntasEntity casasSub7Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c1_p5),7,"Contento","Aburrido","Enojado","Contento");
+                PreguntasEntity casasSub7Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c1_p6),7,"Montaña","Parque","Bosque","Bosque");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub7Pregunta1);
@@ -169,12 +169,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub7Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub8Pregunta1 = new PreguntasEntity("De qué color es la cesta donde están los gatos",8,"Rojo","Azul","Verde","Azul");
-                PreguntasEntity casasSub8Pregunta2 = new PreguntasEntity("Cuántos gatos estaban en la cesta",8,"Cuatro","Dos","Tres","Tres");
-                PreguntasEntity casasSub8Pregunta3 = new PreguntasEntity("De qué color eran los ojos de todos los gatos",8,"Verdes","Azules","Cafes","Azules");
-                PreguntasEntity casasSub8Pregunta4 = new PreguntasEntity("Cuantos gatos con color café estaban en la cesta",8,"Dos","Tres","Cuatro","Dos");
-                PreguntasEntity casasSub8Pregunta5 = new PreguntasEntity("De qué color era el fondo detrás de los gatos",8,"Verde","Azul","Amarillo","Verde");
-                PreguntasEntity casasSub8Pregunta6 = new PreguntasEntity("Cuantos gatos de color amarillo estaban en la cesta",8,"Uno","Dos","Tres","Uno");
+                PreguntasEntity casasSub8Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c2_p1),8,"Rojo","Azul","Verde","Azul");
+                PreguntasEntity casasSub8Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c2_p2),8,"Cuatro","Dos","Tres","Tres");
+                PreguntasEntity casasSub8Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c2_p3),8,"Verdes","Azules","Cafes","Azules");
+                PreguntasEntity casasSub8Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c2_p4),8,"Dos","Tres","Cuatro","Dos");
+                PreguntasEntity casasSub8Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c2_p5),8,"Verde","Azul","Amarillo","Verde");
+                PreguntasEntity casasSub8Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c2_p6),8,"Uno","Dos","Tres","Uno");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub8Pregunta1);
@@ -185,12 +185,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub8Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub9Pregunta1 = new PreguntasEntity("Cuantos Hamsters están en la jaula",9,"Uno","Dos","Tres","Uno");
-                PreguntasEntity casasSub9Pregunta2 = new PreguntasEntity("De qué color el suelo de la segunda planta de la jaula",9,"Morado","Rosado","Rojo","Rosado");
-                PreguntasEntity casasSub9Pregunta3 = new PreguntasEntity("De qué color son las barras de hierro de la puerta de la jaula",9,"Rojo","Rosado","Morado","Rojo");
-                PreguntasEntity casasSub9Pregunta4 = new PreguntasEntity("De qué color es el hamster",9,"Amarillo con blanco","Amarillo con cafe","Blanco con Cafe","Amarillo con blanco");
-                PreguntasEntity casasSub9Pregunta5 = new PreguntasEntity("De qué forma es el elemento azul que estaba detrás del hámster",9,"Circular","Ovalada","Cuadrada","Circular");
-                PreguntasEntity casasSub9Pregunta6 = new PreguntasEntity("De que color en general son las barras de hierro de la jaula",9,"Negro","Gris","Cafe","Negro");
+                PreguntasEntity casasSub9Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c3_p1),9,"Uno","Dos","Tres","Uno");
+                PreguntasEntity casasSub9Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c3_p2),9,"Morado","Rosado","Rojo","Rosado");
+                PreguntasEntity casasSub9Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c3_p3),9,"Rojo","Rosado","Morado","Rojo");
+                PreguntasEntity casasSub9Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c3_p4),9,"Amarillo con blanco","Amarillo con cafe","Blanco con Cafe","Amarillo con blanco");
+                PreguntasEntity casasSub9Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c3_p5),9,"Circular","Ovalada","Cuadrada","Circular");
+                PreguntasEntity casasSub9Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c3_p6),9,"Negro","Gris","Cafe","Negro");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub9Pregunta1);
@@ -201,12 +201,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub9Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub10Pregunta1 = new PreguntasEntity("Cuanta es la cantidad de zarigüeyas en la imagen",10,"Ocho","Seis","Siete","Ocho");
-                PreguntasEntity casasSub10Pregunta2 = new PreguntasEntity("Una característica del fondo de la imagen",10,"Borroso","Distorsionado","Enfocado","Borroso");
-                PreguntasEntity casasSub10Pregunta3 = new PreguntasEntity("Cual era el color de su cara",10,"Blanco","Gris","Rosado","Blanco");
-                PreguntasEntity casasSub10Pregunta4 = new PreguntasEntity("Sobre que estaba sentada la madre zarigüeya",10,"Rama","Piedra","Tronco cortado","Rama");
-                PreguntasEntity casasSub10Pregunta5 = new PreguntasEntity("Cual es el total de crías que tiene la madre zarigüeya",10,"Seis","Cinco","Siete","Siete");
-                PreguntasEntity casasSub10Pregunta6 = new PreguntasEntity("A qué dirección estaba mirando la madre zarigüeya",10,"Borde superior izquierdo","Borde inferior izquierdo","Borde inferior derecho","Borde inferior izquierdo");
+                PreguntasEntity casasSub10Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c4_p1),10,"Ocho","Seis","Siete","Ocho");
+                PreguntasEntity casasSub10Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c4_p2),10,"Borroso","Distorsionado","Enfocado","Borroso");
+                PreguntasEntity casasSub10Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c4_p3),10,"Blanco","Gris","Rosado","Blanco");
+                PreguntasEntity casasSub10Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c4_p4),10,"Rama","Piedra","Tronco cortado","Rama");
+                PreguntasEntity casasSub10Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c4_p5),10,"Seis","Cinco","Siete","Siete");
+                PreguntasEntity casasSub10Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c4_p6),10,"Borde superior izquierdo","Borde inferior izquierdo","Borde inferior derecho","Borde inferior izquierdo");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub10Pregunta1);
@@ -217,12 +217,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub10Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub11Pregunta1 = new PreguntasEntity("Cuántas flores se visualizan en la fotografía",11,"Ocho","Siete","Seis","Ocho");
-                PreguntasEntity casasSub11Pregunta2 = new PreguntasEntity("De qué color es el conejo de la izquierda",11,"Amarillo con blanco","Cafe con blanco","Negro con blanco","Cafe con blanco");
-                PreguntasEntity casasSub11Pregunta3 = new PreguntasEntity("De qué color es el conejo de la derecha",11,"Amarillo con blanco","Cafe con blanco","Negro con blanco","Negro con blanco");
-                PreguntasEntity casasSub11Pregunta4 = new PreguntasEntity("De qué color es el fondo de la imagen",11,"Verde","Blanco","Amarillo","Verde");
-                PreguntasEntity casasSub11Pregunta5 = new PreguntasEntity("Cuál es el conejo mas grande",11,"El conejo de la izquierda","El conejo de la derecha","Ninguno","El conejo de la derecha");
-                PreguntasEntity casasSub11Pregunta6 = new PreguntasEntity("De qué color eran las flores que estaban comiendo",11,"Verde","Amarillo y blanco","Amarillo","Amarillo y blanco");
+                PreguntasEntity casasSub11Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c5_p1),11,"Ocho","Siete","Seis","Ocho");
+                PreguntasEntity casasSub11Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c5_p2),11,"Amarillo con blanco","Cafe con blanco","Negro con blanco","Cafe con blanco");
+                PreguntasEntity casasSub11Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c5_p3),11,"Amarillo con blanco","Cafe con blanco","Negro con blanco","Negro con blanco");
+                PreguntasEntity casasSub11Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c5_p4),11,"Verde","Blanco","Amarillo","Verde");
+                PreguntasEntity casasSub11Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c5_p5),11,"El conejo de la izquierda","El conejo de la derecha","Ninguno","El conejo de la derecha");
+                PreguntasEntity casasSub11Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c5_p6),11,"Verde","Amarillo y blanco","Amarillo","Amarillo y blanco");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub11Pregunta1);
@@ -233,12 +233,12 @@ public class PreguntasCRUD {
                 insertPreguntas(casasSub11Pregunta6);
 
                 //entidades quemadas
-                PreguntasEntity casasSub12Pregunta1 = new PreguntasEntity("Qué expresión presento el gato en la imagen",12,"Felicidad","Molestia","Enojo","Molestia");
-                PreguntasEntity casasSub12Pregunta2 = new PreguntasEntity("Qué expresión presento el perro en la imagen",12,"Amistad","Enojo","Molestia","Amistad");
-                PreguntasEntity casasSub12Pregunta3 = new PreguntasEntity("Qué colores presentaban en común el gato y el perro",12,"Blanco","Amarillo","Cafe","Blanco");
-                PreguntasEntity casasSub12Pregunta4 = new PreguntasEntity("De qué color era el fondo de la imagen",12,"Blanco","Amarillo","Verde","Verde");
-                PreguntasEntity casasSub12Pregunta5 = new PreguntasEntity("De qué color era el cinturón que llevaba el gato en el cuello",12,"Cafe","Gris","Negro","Cafe");
-                PreguntasEntity casasSub12Pregunta6 = new PreguntasEntity("Una característica del fondo de la imagen",12,"Se asemeja al bosque","Está desenfocado","Es de color gris","Está desenfocado");
+                PreguntasEntity casasSub12Pregunta1 = new PreguntasEntity(res.getString(R.string.anim_c6_p1),12,"Felicidad","Molestia","Enojo","Molestia");
+                PreguntasEntity casasSub12Pregunta2 = new PreguntasEntity(res.getString(R.string.anim_c6_p2),12,"Amistad","Enojo","Molestia","Amistad");
+                PreguntasEntity casasSub12Pregunta3 = new PreguntasEntity(res.getString(R.string.anim_c6_p3),12,"Blanco","Amarillo","Cafe","Blanco");
+                PreguntasEntity casasSub12Pregunta4 = new PreguntasEntity(res.getString(R.string.anim_c6_p4),12,"Blanco","Amarillo","Verde","Verde");
+                PreguntasEntity casasSub12Pregunta5 = new PreguntasEntity(res.getString(R.string.anim_c6_p5),12,"Cafe","Gris","Negro","Cafe");
+                PreguntasEntity casasSub12Pregunta6 = new PreguntasEntity(res.getString(R.string.anim_c6_p6),12,"Se asemeja al bosque","Está desenfocado","Es de color gris","Está desenfocado");
 
                 //insertar cada entidad
                 insertPreguntas(casasSub12Pregunta1);

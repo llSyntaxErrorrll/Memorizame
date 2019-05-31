@@ -12,6 +12,7 @@
     <string name="casa1pregunta1">1. Cuantas materas visualizaste en la entrada:</string>
 
     <!-- Respuestas  -->
+    <string name="cero">Cero</string>
     <string name="uno">Uno</string>
     <string name="dos">Dos</string>
     <string name="tres">Tres</string>
@@ -24,7 +25,6 @@
     <string name="diez">Diez</string>
 
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_instrucciones">Instrucciones</string>
     <string name="tab_text_1">Tab 1</string>
@@ -32,5 +32,85 @@
 
     <string name="tiempo">00:01:00</string>
     <string name="terminar">Terminar</string>
+
+
+
+
+
+
+
+
+    <!-- /////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////// -->
+
+    <string name="anim_c1_p1">Cuantas patas del perro NO estaban tocando el suelo</string>
+    <string name="anim_c1_p2">Cual era el tamaño del perro</string>
+    <string name="anim_c1_p3">Cual era el color del collar</string>
+    <string name="anim_c1_p4">Una característica del fondo de la imagen</string>
+    <string name="anim_c1_p5">Cual era el estado de ánimo del perro</string>
+    <string name="anim_c1_p6">En qué lugar se encontraba el perro</string>
+
+    <string name="anim_c2_p1">De qué color es la cesta donde están los gatos</string>
+    <string name="anim_c2_p2">Cuántos gatos estaban en la cesta</string>
+    <string name="anim_c2_p3">De qué color eran los ojos de todos los gatos</string>
+    <string name="anim_c2_p4">Cuantos gatos con color café estaban en la cesta</string>
+    <string name="anim_c2_p5">De qué color era el fondo detrás de los gatos</string>
+    <string name="anim_c2_p6">Cuantos gatos de color amarillo estaban en la cesta</string>
+
+    <string name="anim_c3_p1">Cuantos Hamsters están en la jaula</string>
+    <string name="anim_c3_p2">De qué color el suelo de la segunda planta de la jaula</string>
+    <string name="anim_c3_p3">De qué color son las barras de hierro de la puerta de la jaula</string>
+    <string name="anim_c3_p4">De qué color es el hamster</string>
+    <string name="anim_c3_p5">De qué forma es el elemento azul que estaba detrás del hámster</string>
+    <string name="anim_c3_p6">De que color en general son las barras de hierro de la jaula</string>
+
+    <string name="anim_c4_p1">Cuanta es la cantidad de zarigüeyas en la imagen</string>
+    <string name="anim_c4_p2">Una característica del fondo de la imagen</string>
+    <string name="anim_c4_p3">Cual era el color de su cara</string>
+    <string name="anim_c4_p4">Sobre que estaba sentada la madre zarigüeya</string>
+    <string name="anim_c4_p5">Cual es el total de crías que tiene la madre zarigüeya</string>
+    <string name="anim_c4_p6">A qué dirección estaba mirando la madre zarigüeya</string>
+
+    <string name="anim_c5_p1">Cuántas flores se visualizan en la fotografía</string>
+    <string name="anim_c5_p2">De qué color es el conejo de la izquierda</string>
+    <string name="anim_c5_p3">De qué color es el conejo de la derecha</string>
+    <string name="anim_c5_p4">De qué color es el fondo de la imagen</string>
+    <string name="anim_c5_p5">Cuál es el conejo mas grande</string>
+    <string name="anim_c5_p6">De qué color eran las flores que estaban comiendo</string>
+
+    <string name="anim_c6_p1">Qué expresión presento el gato en la imagen</string>
+    <string name="anim_c6_p2">Qué expresión presento el perro en la imagen</string>
+    <string name="anim_c6_p3">Qué colores presentaban en común el gato y el perro</string>
+    <string name="anim_c6_p4">De qué color era el fondo de la imagen</string>
+    <string name="anim_c6_p5">De qué color era el cinturón que llevaba el gato en el cuello</string>
+    <string name="anim_c6_p6">Una característica del fondo de la imagen</string>
+
+
+
+    <string name="anim_c1_p2_r1">Grande</string>
+    <string name="anim_c1_p2_r2">Mediano</string>
+    <string name="anim_c1_p2_r3">Pequeño</string>
+
+    <string name="anim_c1_p3_r1">asdasd</string>
+    <string name="anim_c1_p3_r2">asdasd</string>
+    <string name="anim_c1_p3_r3">asdasd</string>
+
+    <string name="anim_c1_p4_r1">asdasd</string>
+    <string name="anim_c1_p4_r2">asdasd</string>
+    <string name="anim_c1_p4_r3">asdasd</string>
+
+    <string name="anim_c1_p5_r1">asdasd</string>
+    <string name="anim_c1_p5_r2">asdasd</string>
+    <string name="anim_c1_p5_r3">asdasd</string>
+
+    <string name="anim_c1_p6_r1">asdasd</string>
+    <string name="anim_c1_p6_r2">asdasd</string>
+    <string name="amin_c1_p6_r3">asdasd</string>
+
+    <!-- /////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////// -->
+
 
 </resources>

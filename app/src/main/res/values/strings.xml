@@ -50,12 +50,12 @@
     <string name="casa5pregunta6">6. De que color es el sofá:</string>
 
     <!-- casa reto 6-->
-    <string name="casa6pregunta1">1. De qué color es la nevera:</string>
-    <string name="casa6pregunta2">2. Que figura hay en el cuadro de la izquierda:</string>
-    <string name="casa6pregunta3">3. Los adornos debajo de la mesa del televisor de qué color son:</string>
-    <string name="casa6pregunta4">4. La almohada negra del sofá qué figura tiene:</string>
-    <string name="casa6pregunta5">5. Sobre el comedor en el techo que hay:</string>
-    <string name="casa6pregunta6">6. De que material es la mesa donde se encuentra el televisor:</string>
+    <string name="casa6pregunta1">1. En la parte derecha de la imagen en el techo que se puede visualizar:</string>
+    <string name="casa6pregunta2">2. En la parte izquierda de la imagen en el techo que se puede visualizar:</string>
+    <string name="casa6pregunta3">3. De que color es la alfombra de la sala:</string>
+    <string name="casa6pregunta4">4. Cuantas ollas utensilios de cocina hay en la pared de color negro:</string>
+    <string name="casa6pregunta5">5. En la esquina derecha de la habitación hay:</string>
+    <string name="casa6pregunta6">6. El adorno de la mesa de qué color es:</string>
 
     <!--Categoria Calles -->
     <!-- calle reto 1-->

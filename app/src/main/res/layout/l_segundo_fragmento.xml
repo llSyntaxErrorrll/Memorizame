@@ -49,16 +49,16 @@
     <ImageView
         android:layout_width="@dimen/dim_50"
         android:layout_height="@dimen/dim_cien_50"
-        android:src="@mipmap/flechaderecha"
-        android:paddingRight="-12dp"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"/>
+        android:src="@mipmap/flechaizquierda"
+        android:layout_centerVertical="true"
+        android:rotation="180"/>
+
     <ImageView
         android:layout_width="@dimen/dim_50"
         android:layout_height="@dimen/dim_cien_50"
-        android:src="@mipmap/flechaizquierda"
-        android:paddingRight="-12dp"
-        android:layout_alignParentleft="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dim_cien_50"
+        android:src="@mipmap/flechaizquierda"/>
 
 </RelativeLayout>

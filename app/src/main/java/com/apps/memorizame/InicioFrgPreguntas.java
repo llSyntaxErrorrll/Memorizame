@@ -166,7 +166,7 @@ public class InicioFrgPreguntas extends Fragment {
                     int radioButtonId3 = radioGroup3.getCheckedRadioButtonId();
                     View radioButton3 = radioGroup3.findViewById(radioButtonId3);
                     int indice3 = radioGroup3.indexOfChild(radioButton3);
-                    RadioButton rb3 = (RadioButton)  radioGroup1.getChildAt(indice3);
+                    RadioButton rb3 = (RadioButton)  radioGroup3.getChildAt(indice3);
                     String texto3 = rb3.getText().toString();
                     if (texto3.equals(respuestCorecct3)){
                         total += 1;

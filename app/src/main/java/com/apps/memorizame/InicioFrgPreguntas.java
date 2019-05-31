@@ -150,7 +150,7 @@ public class InicioFrgPreguntas extends Fragment {
                     int indice = radioGroup1.indexOfChild(radioButton);
                     RadioButton rb = (RadioButton)  radioGroup1.getChildAt(indice);
                     String texto = rb.getText().toString();
-                    if (texto.equals(texto)){
+                    if (texto.equals(respuestCorecct1)){
                         total += 1;
                     }
 

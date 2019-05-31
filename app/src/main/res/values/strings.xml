@@ -7,6 +7,23 @@
     <string name="memorizaimagen">Memoriza Imagen</string>
     <string name="preguntas">Preguntas</string>
 
+    <!--Categoria Casas -->
+    <!-- casa reto 1-->
+    <string name="casa1pregunta1">1. Cuantas materas visualizaste en la entrada:</string>
+
+    <!-- Respuestas  -->
+    <string name="uno">Uno</string>
+    <string name="dos">Dos</string>
+    <string name="tres">Tres</string>
+    <string name="cuatro">Cuatro</string>
+    <string name="cinco">Cinco</string>
+    <string name="seis">Seis</string>
+    <string name="siete">Siete</string>
+    <string name="ocho">Ocho</string>
+    <string name="nueve">Nueve</string>
+    <string name="diez">Diez</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_instrucciones">Instrucciones</string>

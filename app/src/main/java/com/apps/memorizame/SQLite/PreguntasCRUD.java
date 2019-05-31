@@ -2,18 +2,23 @@ package com.apps.memorizame.SQLite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.apps.memorizame.Entitys.PreguntasEntity;
+import com.apps.memorizame.R;
 import com.apps.memorizame.Tools.Constans;
 
 public class PreguntasCRUD {
 
     private Database database;
     private SQLiteDatabase db;
+    Resources res ;
 
-    public PreguntasCRUD(Context context){ database= new Database(context); }
+    public PreguntasCRUD(Context context){
+        res = context.getResources();
+        database= new Database(context); }
 
     public long insertPreguntas (PreguntasEntity preguntasEntity){
         db = database.getWritableDatabase();
@@ -52,7 +57,7 @@ public class PreguntasCRUD {
             if(rs){
                 db = database.getWritableDatabase();
                 //entidades quemadas
-                PreguntasEntity casasSub1Pregunta1 = new PreguntasEntity("Hola",1,"respuesta1","respuesta2","respuesta3","rc");
+                PreguntasEntity casasSub1Pregunta1 = new PreguntasEntity(res.getString(R.string.casa1pregunta1),1,"respuesta1","respuesta2","respuesta3","rc");
                 PreguntasEntity casasSub1Pregunta2 = new PreguntasEntity("K",1,"respuesta1","respuesta2","respuesta3","rc");
                 PreguntasEntity casasSub1Pregunta3 = new PreguntasEntity("Hace",1,"respuesta1","respuesta2","respuesta3","rc");
                 PreguntasEntity casasSub1Pregunta4 = new PreguntasEntity("Mija",1,"respuesta1","respuesta2","respuesta3","rc");
